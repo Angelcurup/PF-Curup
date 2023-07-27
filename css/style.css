@@ -1,0 +1,42 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #bac3d3;
+}
+
+/* navbar */
+
+.container-fluid {
+    padding: 20px 5%;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.offcanvas-body ul li {
+    padding: 0 20px;
+    border-radius: 16px;
+    border: solid 2px rgba(223, 237, 243, .0);
+    transition: 0.3s;
+}
+
+.offcanvas-body ul li:hover {
+    border: solid 2px #dfedf3;
+}
+
+.offcanvas-body ul li a {
+    text-transform: capitalize;
+    color: #201f1f;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
