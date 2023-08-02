@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #bac3d3;
+    background-color: #e8ecf1;
 }
 
 .contenedor1 {
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-item {
-    border-radius: 22px;
+    border-radius: 26px;
 }
 
 .nav-item:hover {
@@ -51,7 +51,7 @@ body {
 }
 
 .login {
-    border-radius: 22px;
+    border-radius: 26px;
 }
 
 .login:hover {
@@ -86,14 +86,14 @@ body {
 }
 
 .button {
-    padding: 15px 60px;
-    border-radius: 20px;
+    padding: 10px 60px;
     text-decoration: none;
     font-size: 1.3rem;
 }
 
 .button-banner {
     background-color: #b88df1;
+    border-radius: 30px;
     margin-top: 20px;
     width: 40%;
     display: flex;
@@ -103,11 +103,12 @@ body {
     text-transform: capitalize;
     font-weight: 600;
     transition: all 300ms ease-out;
+    border: solid 2px rgba(223, 231, 245, .0);
 }
 
 .button-banner:hover {
-    background-color: #f1b28d;
-    color: #1F1F22;
+    background-color: #171718;
+    border: solid 2px #dfe7f5;
 }
 
 .banner-social {
@@ -130,8 +131,8 @@ body {
 }
 
 .banner-social .social:hover {
-    color: #f1b28d;
-    border:solid 2px #f1b28d;
+    color: #b88df1;
+    border:solid 2px #b88df1;
 }
 
 .contenedor-card {
@@ -148,11 +149,11 @@ body {
 .cards {
     background: radial-gradient(#1F1F22 50%, #171718 100%);
     overflow: hidden;
-    border-radius: 16px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 22px;
 }
 
 .cards-img {
@@ -189,18 +190,20 @@ body {
 }
 
 .button-description {
-    background-color: #dfe7f5;
+    background-color: #b88df1;
+    border-radius: 26px;
     padding: 10px 60px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #171718;
+    color: #dfe7f5;
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.3s ease-out 0.4s;
+    border: solid 2px rgba(223, 231, 245, .0);
+    transition: all 300ms ease-out;
 }
 
 .button-description:hover {
-    background-color: #f1b28d;
+    background-color: #171718;
+    border: solid 2px #dfe7f5;
     transition: 0.3s;
 }
 
@@ -211,9 +214,23 @@ body {
 
 .cards:hover .button-description {
     opacity: 1;
-    transform: translateY(0);
 }
 
+.contenedor2 {
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+
+    display: grid;
+    grid-template-rows: 500px 300px;
+    gap: 20px;
+}
+
+.info1 {
+    border-radius: 26px;
+    width: 100%;
+    
+}
 /* media-queries */
 /* media-lg */
 
