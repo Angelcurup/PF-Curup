@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon/logo.svg">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
     <title>HOME</title>
@@ -14,12 +15,14 @@
     
     <header>
         <!-- info-principal -->
-        <section class="contenedor1">
+        <section id="contenedor-header">
              <!-- navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
                 <!-- logo -->
-                <a href="#" class="navbar-brand logo">logo</a>
+                <a href="#" class="navbar-brand logo">
+                    <img src="icon/logo.svg" alt="logo intel-laf" class="container-logo">
+                </a>
                 <!-- toggle btn -->
                 <button
                 class="navbar-toggler shadow-none border-0"
@@ -32,13 +35,13 @@
                 </button>
                 <!-- sidebar -->
                 <div
-                class="offcanvas offcanvas-end"
+                class="sidebar offcanvas offcanvas-end border-0 shadow-0"
                 tabindex="-1"
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <!-- sidebar header-->
                     <div class="offcanvas-header">
-                        <h5 class="ofcanvas-tittle" id="offcanvasNavbarLabel">offcanvas</h5>
+                        <h5 class="ofcanvas-tittle" id="offcanvasNavbarLabel">Intel-Laf</h5>
                         <button
                         type="button"
                         class="btn-close btn-close-white shadow-none"
@@ -53,18 +56,18 @@
                                 <a class="nav-link mx-4" href="#">home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-4" href="#">productos</a>
+                                <a class="nav-link mx-4" href="pages/productos.html">products</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-4" href="#">nosotros</a>
+                                <a class="nav-link mx-4" href="pages/nosotros.html">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-4" href="#">contacto</a>
+                                <a class="nav-link mx-4" href="pages/contacto.html">contact</a>
                             </li>
                         </ul>
                         <!-- login -->
                         <div class="nav-item p-2 login">
-                            <a href="#" class="nav-link mx-4">login</a>
+                            <a href="pages/login.html" class="nav-link mx-4">login</a>
                         </div>
                     </div>
                 </div>
@@ -73,9 +76,9 @@
         <!-- end navbar -->
         <!-- banner -->
         <div class="banner">
-                <h2 class="banner-sub">Lorem, ipsum dolor.</h2>
+                <h4 class="banner-sub">Lorem, ipsum dolor.</h4>
                 <h1 class="banner-titulo">Lorem ipsum<br>dolor sit amet</h1>
-                <a href="https://www.logitechg.com/en-us/playyourway.html?utm_campaign=ca025&utm_medium=comm_Q1&utm_source=pin" class="button button-banner" target="_blank">learn more</a>
+                <a href="https://www.logitechg.com/en-us/playyourway.html?utm_campaign=ca025&utm_medium=comm_Q1&utm_source=pin" class="button-banner" target="_blank">learn more</a>
                 <div class="banner-social">
                     <a href="#" class="fa fa-facebook social"></a>
                     <a href="#" class="fa fa-instagram social"></a>
@@ -88,23 +91,23 @@
         <!-- cards -->
         <section class="contenedor-card">
             <div class="cards">
-                <img src="img/logitechg305.svg" alt="#" class="cards-img">
+                <img src="img/logitechg305.svg" alt="logitech g305" class="cards-img">
                 <div class="cards-descripcion">
-                    <h3 class="descripcion-titulo">logitech g305</h3>
+                    <h4 class="descripcion-titulo">logitech g305</h4>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
             <div class="cards">
-                <img src="img/logitechg915.svg" alt="#" class="cards-img">
+                <img src="img/logitechg915.svg" alt="#logitech g915" class="cards-img">
                 <div class="cards-descripcion">
-                    <h3 class="descripcion-titulo">logitech g915</h3>
+                    <h4 class="descripcion-titulo">logitech g915</h4>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
             <div class="cards card3">
-                <img src="img/logitechg733.svg" alt="#" class="cards-img">
+                <img src="img/logitechg733.svg" alt="logitech g733" class="cards-img">
                 <div class="cards-descripcion">
-                    <h3 class="descripcion-titulo">logitech g733</h3>
+                    <h4 class="descripcion-titulo">logitech g733</h4>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
@@ -122,9 +125,6 @@
                     <p class="informacion__descuento-parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse nostrum, blanditiis ex laudantium earum officiis provident voluptatum placeat optio distinctio.</p>
                     <a href="#" class="informacion__descuento-button">get of 30% off now</a>
                 </article>
-                <div class="informacion__img">
-                    <img src="img/god-of-war-hub-hero-banner-featured-01-en-09jul21.webp" alt="#" class="informacion__img-god">
-                </div>
             </div>
         </section>
         <!-- end-descuentos -->
@@ -137,22 +137,22 @@
                     <a href="#" class="producto__informacion-button">buy now</a>
                 </div>
                 <div class="producto__img">
-                    <img src="img/rtx4090.png" alt="#" class="producto__img-rtx4090">
+                    <img src="img/rtx-4090.svg" alt="tarjeta grafica rtx 4090" class="producto__img-rtx4090">
                 </div>
             </div>
             <div class="contenedor3__producto2">
                 <div class="producto__informacion">
                     <h3 class="producto__informacion-titulo">play station 5</h3>
                     <p class="producto__informacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione ipsum culpa eligendi similique! Modi dolore laboriosam deleniti fugiat quibusdam.</p>
-                    <a href="#" class="producto__informacion-button button-producto2">buy now</a>
+                    <a href="#" class="producto__informacion-button">buy now</a>
                 </div>
                 <div class="producto__img">
-                    <img src="img/PlayStation_5.webp" alt="#" class="producto__img-playstation">
+                    <img src="img/playstation-5.svg" alt="playstation 5" class="producto__img-playstation">
                 </div>
             </div>
         </section>
         <!-- end-productos -->
-        <!-- carrusel -->
+        <!-- category -->
         <section id="contenedor4">
             <h3 class="contenedor4__titulo">what would you like to find?</h3>
             <div class="contenedor4__categoria">
@@ -179,7 +179,133 @@
                 
             </div>
         </section>
+        <!-- end-category -->
+        <!-- productos-populares -->
+        <section class="container-fluid py-5">
+            <h3 class="text-center">popular products</h3>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 py-5">
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/iphon-14-pro-max.svg" class="card-img-top" alt="iphon 14 pro max">
+                        <div class="card-body">
+                          <h4 class="card-title">iphon 14 pro max</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/airpods-pro.svg" class="card-img-top" alt="airpods pro">
+                        <div class="card-body">
+                          <h4 class="card-title">airpods pro</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/airpods-pro-max.svg" class="card-img-top" alt="airpods max">
+                        <div class="card-body">
+                          <h4 class="card-title">airpods max</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/control-play-5.svg" class="card-img-top" alt="control playstation 5">
+                        <div class="card-body">
+                          <h4 class="card-title">control playstation 5</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/rtx-4080-gigabyte.svg" class="card-img-top" alt="tarjeta grafica gigabyte 4080">
+                        <div class="card-body">
+                          <h4 class="card-title">rtx 4080 gigabyte</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/asus-rog-strix.svg" class="card-img-top" alt="laptop asus rog strix">
+                        <div class="card-body">
+                          <h4 class="card-title">asus roge strix</h4>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="card__price-titulo">$.1099</h5>
+                            <a href="#" class="card__price-button">buy now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <a href="#" class="ver-mas"></a>
+        </section>
+        <!-- end-productos-populares -->
+        <!-- contenedor-sub -->
+        <section class="contenedor5">
+            <div class="contenedor5__sub">
+                <h2 class="contenedor5__sub-titulo">subscribe</h2>
+                <p class="contenedor5__sub-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sequi?</p>
+                <form action="#" class="contenedor5__sub-form">
+                    <input type="email" class="contenedor5__sub-form-email" placeholder="correo electronico">
+                    <input type="submit" value="suscribir" class="contenedor5__sub-form-button">
+                </form>
+            </div>
+        </section>
     </main>
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo__1">
+            <div class="grupo__1-box">
+                <figure class="grupo__1-logo">
+                    <a href="#">
+                        <img src="icon/logo.svg" alt="Logo intel-laf" class="grupo__1-logo-img">
+                    </a>
+                </figure>
+            </div>
+            <div class="grupo__1-box">
+                <h2 class="grupo__1-titulo">SOBRE NOSOTROS</h2>
+                <p class="grupo__1-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem nisi veniam debitis est voluptatum, reprehenderit accusantium quibusdam eaque qui!</p>
+            </div>
+            <div class="grupo__1-box box-social">
+                <h2 class="grupo__1-titulo">SIGUENOS</h2>
+                <div class="red__social">
+                    <a href="#" class="red__social-icon fa fa-facebook"></a>
+                    <a href="#" class="red__social-icon fa fa-instagram"></a>
+                    <a href="#" class="red__social-icon fa fa-twitter"></a>
+                    <a href="#" class="red__social-icon fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Intel-Laf</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
