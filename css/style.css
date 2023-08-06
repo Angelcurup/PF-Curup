@@ -591,6 +591,85 @@ body {
     margin-top: 20px;
 }
 
+
+/* page-products */
+
+/* page-about */
+
+/* page-contact */
+
+/* page-login */
+
+.page-login {
+    width: 100%;
+    height: 100%;
+    background-color: #725592;
+}
+
+.container__login {
+    background-color: #f7f3ff;
+    border-radius: 30px;
+}
+
+.container__login-img {
+    background: url(/img/fondo-horizon.svg) no-repeat center center/cover;
+    border-radius: 30px 0 0 30px;
+}
+
+.container__login-titulo {
+    color: #1F1F22;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.container__login-input {
+    background-color: #725592;
+}
+
+.container__login-input-txt {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container__login-input-check {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.container__login-input-span {
+    color: #725592;
+    font-weight: 600;
+    transition: all 300ms ease-out;
+    text-transform: capitalize;
+}
+
+.container__login-input-span:hover {
+    color: #aa8a74;
+}
+
+.container__login-input-button {
+    background-color: #725592;
+    color: #f7f3ff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.container__login-input-button:hover {
+    background-color: #aa8a74;
+    color: #f7f3ff;
+}
+
+.container__login-or {
+    background-color: #f7f3ff;
+}
+
+.container__login-input-button-google {
+    background-color: #dfe7f5;
+}
+
+
+/* end pages-login */
+
 /* media-queries */
 
 @media screen and (max-width: 1174px) {
@@ -733,5 +812,11 @@ body {
 
     .box-social {
         grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .loging__contain-google {
+        font-size: 0.6rem;
     }
 }
