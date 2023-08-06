@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
+    padding: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -598,6 +600,45 @@ body {
 
 /* page-contact */
 
+.page-contacto {
+    background-color: #1F1F22;
+}
+
+#contenedor-contacto {
+    padding-top: 20px;
+}
+
+.container__contact-icon {
+    background-color: #000000;
+    border-radius: 30px 0 0 30px;
+    padding: 45px;
+}
+
+.container__contact {
+    background-color: #f3c5a5;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.container__contact-coment {
+    padding: 45px;
+}
+
+.container__contact-icon-text {
+    color: #f7f3ff;
+}
+
+.container__contact-titulo {
+    text-transform: capitalize;
+    color: #f7f3ff;
+    font-weight: 600;
+}
+
+.container__contact-titulo2 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
 /* page-login */
 
 #contenedor-loging {
@@ -717,6 +758,27 @@ body {
 
     .banner-social .social {
         margin-right: 0;
+    }
+
+    /* page contacto */
+
+    .container__contact {
+        width: 100%;
+    }
+
+    .container__contact-coment {
+        padding: 20px;
+    }
+
+    .container__contact-icon {
+        border-radius: 30px 30px 0 0;
+        text-align: center;
+        padding: 20px;
+    }
+    .container__contact-icon-bg {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
     }
 }
 
