@@ -11,16 +11,11 @@ body {
     background-color: #f1ebff;
 }
 
-/* contenedor-1 */
-
-#contenedor-header {
-    background: url(../img/fondo.svg) no-repeat center/cover;
-    background-position: 69%;
-    height: auto;
-    padding: 20px 10%;
-}
-
 /* navbar */
+
+.navbar {
+    width: 100%;
+}
 
 .container-logo {
     width: 50px;
@@ -58,6 +53,13 @@ body {
 /* banner */
 
 .banner {
+    background: url(../img/fondo.svg) no-repeat center/cover;
+    background-position: 69%;
+    height: auto;
+    padding: 80px 10%;
+}
+
+.banner__content {
     width: 50%;
 }
 
@@ -604,10 +606,6 @@ body {
     background-color: #1F1F22;
 }
 
-#contenedor-contacto {
-    padding-top: 20px;
-}
-
 .container__contact-icon {
     background-color: #000000;
     border-radius: 30px 0 0 30px;
@@ -637,6 +635,10 @@ body {
 .container__contact-titulo2 {
     text-transform: capitalize;
     font-weight: 600;
+}
+
+.container__contact-icon-bg {
+    height: 5rem;
 }
 
 /* page-login */
@@ -713,6 +715,10 @@ body {
     background-color: #dfe7f5;
 }
 
+.container__login-or-position {
+    height: 0.9rem;
+}
+
 
 /* end pages-login */
 
@@ -751,7 +757,8 @@ body {
     }
 
     /* banner */
-    .banner {
+
+    .banner__content {
         text-align: center;
         width: 100%;
     }

@@ -15,38 +15,24 @@
     
     <header>
         <!-- info-principal -->
-        <section id="contenedor-header">
+        <div id="contenedor-header">
              <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute">
             <div class="container">
                 <!-- logo -->
                 <a href="#" class="navbar-brand logo">
                     <img src="icon/logo.svg" alt="logo intel-laf" class="container-logo">
                 </a>
                 <!-- toggle btn -->
-                <button
-                class="navbar-toggler shadow-none border-0"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- sidebar -->
-                <div
-                class="sidebar offcanvas offcanvas-end border-0 shadow-0"
-                tabindex="-1"
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                <div class="sidebar offcanvas offcanvas-end border-0 shadow-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <!-- sidebar header-->
                     <div class="offcanvas-header">
-                        <h5 class="ofcanvas-tittle" id="offcanvasNavbarLabel">Intel-Laf</h5>
-                        <button
-                        type="button"
-                        class="btn-close btn-close-white shadow-none"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="close">
+                        <span class="ofcanvas-tittle"id="offcanvasNavbarLabel">Intel-Laf</span>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="close">
                         </button>
                     </div>
                     <!-- sidebar body -->
@@ -74,48 +60,49 @@
             </div>
         </nav>
         <!-- end navbar -->
+        </div>
+    </header>
+    <!-- info-secundary-->
+    <main>
         <!-- banner -->
-        <div class="banner">
-                <h4 class="banner-sub">Lorem, ipsum dolor.</h4>
-                <h1 class="banner-titulo">Lorem ipsum<br>dolor sit amet</h1>
+        <section class="banner">
+            <div class="banner__content">
+                <span class="banner-sub">Lorem, ipsum dolor.</span>
+                <h1 class="banner-titulo">Lorem ipsum dolor sit amet</h1>
                 <a href="https://www.logitechg.com/en-us/playyourway.html?utm_campaign=ca025&utm_medium=comm_Q1&utm_source=pin" class="button-banner" target="_blank">learn more</a>
                 <div class="banner-social">
                     <a href="#" class="fa fa-facebook social"></a>
                     <a href="#" class="fa fa-instagram social"></a>
                     <a href="#" class="fa fa-youtube social"></a>
                 </div>
-        </div>
-        <!-- end-banner -->
+            </div>
         </section>
-
+        <!-- end-banner -->
         <!-- cards -->
         <section class="contenedor-card">
             <div class="cards">
                 <img src="img/logitechg305.svg" alt="logitech g305" class="cards-img">
                 <div class="cards-descripcion">
-                    <h4 class="descripcion-titulo">logitech g305</h4>
+                    <h2 class="descripcion-titulo">logitech g305</h2>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
             <div class="cards">
                 <img src="img/logitechg915.svg" alt="#logitech g915" class="cards-img">
                 <div class="cards-descripcion">
-                    <h4 class="descripcion-titulo">logitech g915</h4>
+                    <h2 class="descripcion-titulo">logitech g915</h2>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
             <div class="cards card3">
                 <img src="img/logitechg733.svg" alt="logitech g733" class="cards-img">
                 <div class="cards-descripcion">
-                    <h4 class="descripcion-titulo">logitech g733</h4>
+                    <h2 class="descripcion-titulo">logitech g733</h2>
                     <a href="#" class="button button-description">clik</a>
                 </div>
             </div>
         </section>
         <!-- end-cards -->
-    </header>
-    <!-- info-secundary-->
-    <main>
         <!-- descuento -->
         <section id="contenedor2">
             <div class="informacion">
@@ -147,7 +134,7 @@
                     <a href="#" class="producto__informacion-button">buy now</a>
                 </div>
                 <div class="producto__img">
-                    <img src="img/playstation-5.svg" alt="playstation 5" class="producto__img-playstation">
+                    <img src="img/playstation-5.svg"alt="playstation 5" class="producto__img-playstation">
                 </div>
             </div>
         </section>
@@ -263,7 +250,6 @@
                       </div>
                 </div>
             </div>
-            <a href="#" class="ver-mas"></a>
         </section>
         <!-- end-productos-populares -->
         <!-- contenedor-sub -->
@@ -303,11 +289,12 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2023 <b>Intel-Laf</b> - Todos los Derechos Reservados.</small>
+            <span>&copy; 2023 <b>Intel-Laf</b> - Todos los Derechos Reservados.</span>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </html>

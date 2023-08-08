@@ -14,65 +14,52 @@
 
     <header>
         <!-- info-principal -->
-        <section id="contenedor-loging">
-             <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container">
-                <!-- logo -->
-                <a href="#" class="navbar-brand logo">
-                    <img src="../icon/logo.svg" alt="logo intel-laf" class="container-logo">
-                </a>
-                <!-- toggle btn -->
-                <button
-                class="navbar-toggler shadow-none border-0"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- sidebar -->
-                <div
-                class="sidebar offcanvas offcanvas-end border-0 shadow-0"
-                tabindex="-1"
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
-                    <div class="offcanvas-header">
-                        <h5 class="ofcanvas-tittle" id="offcanvasNavbarLabel">Intel-Laf</h5>
-                        <button
-                        type="button"
-                        class="btn-close btn-close-white shadow-none"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="close">
-                        </button>
-                    </div>
-                    <!-- sidebar body -->
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link mx-4" href="../index.html">home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-4" href="./productos.html">products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-4" href="./nosotros.html">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-4" href="./contacto.html">contact</a>
-                            </li>
-                        </ul>
-                        <!-- login -->
-                        <div class="nav-item p-2 login">
-                            <a href="#" class="nav-link mx-4">login</a>
+        <div id="contenedor-login">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container">
+                    <!-- logo -->
+                    <a href="#" class="navbar-brand logo">
+                        <img src="../icon/logo.svg" alt="logo intel-laf" class="container-logo">
+                    </a>
+                    <!-- toggle btn -->
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- sidebar -->
+                    <div class="sidebar offcanvas offcanvas-end border-0 shadow-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar header-->
+                        <div class="offcanvas-header">
+                            <span class="ofcanvas-tittle"id="offcanvasNavbarLabel">Intel-Laf</span>
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="close">
+                            </button>
+                        </div>
+                        <!-- sidebar body -->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-4" href="../index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-4" href="./productos.html">products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-4" href="./nosotros.html">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-4" href="./contacto.html">contact</a>
+                                </li>
+                            </ul>
+                            <!-- login -->
+                            <div class="nav-item p-2 login">
+                                <a href="#" class="nav-link mx-4">login</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         <!-- end navbar -->
+        </div>
     </header>
 
     <main class="container mt-5 container__login shadow">
@@ -85,7 +72,7 @@
                     <div class="d-flex justify-content-center align-items-center mt-4">
                         <img src="../icon/user-people-account-svgrepo-com.svg" width="100px" alt="login-icon">
                     </div>
-                    <h2 class="text-center container__login-titulo">login</h2>
+                    <h1 class="text-center container__login-titulo">login</h1>
                 </div>
                 <div class="input-group mt-4">
                     <div class="input-group-text container__login-input">
@@ -116,7 +103,7 @@
                     <a href="#" class="text-decoration-none container__login-input-span">register</a>
                 </div>
                 <div class="p-5">
-                    <div class="border-bottom text-center" style="height: 0.9rem;">
+                    <div class="border-bottom text-center container__login-or-position">
                         <span class="px-3 container__login-or container__login-input-check">
                             or
                         </span>
@@ -129,8 +116,9 @@
             </div>
         </div>
     </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </html>
