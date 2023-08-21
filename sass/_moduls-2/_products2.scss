@@ -49,12 +49,16 @@
         background-color: map-get(v.$colors, "sky" );
         .products_conten {
             .products_conten_img {
-                background: url(../../img/g733-logitech.svg) no-repeat center center/contain;
-                overflow: hidden;
-                @include m.mv(991px){
-                    height: 400px;
-                    padding: 20px;
-                };
+                
+                .products_conten_img_bg{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    @include m.mv(991px){
+                        height: 400px;
+                        padding: 20px;
+                    };
+                }
             }
             .products_conten_info {
                 padding: 40px;

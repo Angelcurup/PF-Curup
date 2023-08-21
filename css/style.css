@@ -726,12 +726,13 @@ img {
 .contain_products .products {
   background-color: #eff6fd;
 }
-.contain_products .products .products_conten .products_conten_img {
-  background: url(../../img/g733-logitech.svg) no-repeat center center/contain;
-  overflow: hidden;
+.contain_products .products .products_conten .products_conten_img .products_conten_img_bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 @media screen and (max-width: 991px) {
-  .contain_products .products .products_conten .products_conten_img {
+  .contain_products .products .products_conten .products_conten_img .products_conten_img_bg {
     height: 400px;
     padding: 20px;
   }
@@ -1356,8 +1357,10 @@ img {
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
-.login-contain .container__login .row .container__login_img {
-  background: url(../../img/login.svg) no-repeat center right/cover;
+.login-contain .container__login .row .container__login_img .container__login_img_bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .login-contain .container__login .row .col .login_content .login_content_title {
   color: #121213;

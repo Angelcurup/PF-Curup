@@ -18,7 +18,13 @@
         border-radius: v.$border-radius-lg;
         .row {
             .container__login_img {
-                background: url(../../img/login.svg) no-repeat center right/cover;
+
+                .container__login_img_bg{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
             }
             
             .col{
