@@ -727,7 +727,7 @@ img {
   background-color: #eff6fd;
 }
 .contain_products .products .products_conten .products_conten_img {
-  background: url(../../img/g733-logitech.svg) no-repeat center center/contain;
+  background: url(./../../img/g733-logitech.svg) no-repeat center center/contain;
   overflow: hidden;
 }
 @media screen and (max-width: 991px) {
