@@ -1,0 +1,208 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#page-about{
+    background-color: map-get(v.$colors, "black" );
+}
+
+.container-slide{
+    width: 100%;
+    height: auto;
+    
+    .slide{
+        width: 100%;
+        height: auto;
+        padding: 100px 10%;
+    }
+    .slide1{
+        background-color: map-get(v.$colors, "violet" );
+        @include m.grid(repeat(auto-fit, minmax(min(100%, 500px), 1fr)), 20px, auto);
+
+        .slide1-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: map-get(v.$colors, "black" );
+            padding: 20px;
+            border-radius: v.$border-radius-lg;
+            @include m.mv(991px){
+                text-align: center
+            };
+            
+            .slide1-info-title{
+                font-family: v.$font-title;
+                -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "title-lg"), map-get( v.$font-weight, "normal"), v.$text-transform);
+                margin-bottom: 40px;
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "title-md" )
+                };
+                @include m.mv(523px){
+                    font-size: map-get(v.$font-size, "title-sm" )
+                };
+            }
+
+            .slide1-info-txt{
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+            }
+
+            .slide1-info-btn{
+
+                .slide1-info-button{
+                    margin-top: 20px;
+                    @include m.style-btn(map-get(v.$colors, "black"), map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+                    text-transform: v.$text-transform;
+                    transition: v.$ease-out;
+                    &:hover{
+                        background-color: map-get(v.$colors, "purple" );
+                        color: map-get(v.$colors, "white" );
+                    }
+                    @include m.mv(523px){
+                        font-size: map-get(v.$font-size, "span-sm" )
+                    };
+                }
+            }
+        }
+        .slide1-img{
+            width: 100%;
+            height: 100%;
+            @include m.flex(flex, row, nowrap, center, center);
+
+            .slide1-img-bg{
+                width: 100%;
+            }
+        }
+    }
+
+    .slide2 {
+        color: map-get(v.$colors, "white" );
+
+        .slide2-info {
+
+            .slide2-info-txt{
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                text-align: center;
+            }
+        }
+        .slide2-cards{
+            margin-top: 100px;
+
+            .cards-value{
+                width: 100%;
+                height: auto;
+                @include m.grid(repeat(auto-fit, minmax(min(100%, 200px), 1fr)), 20px, auto);
+
+                .cards-value-info{
+                    background-color: map-get(v.$colors, "white" );
+                    color: map-get(v.$colors, "black" );
+                    border-radius: v.$border-radius-md;
+                    padding: 10px;
+                    text-align: center;
+
+                    .value-info-img{
+                        padding: 20px;
+                    }
+                    
+                    .value-info-des{
+                        .value-info-des-title{
+                            @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-lg"), map-get( v.$font-weight, "semibold"), v.$text-transform);
+                        }
+                        .value-info-des-txt{
+                            @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slide3{
+        color: map-get(v.$colors, "white" );
+
+        .slide3-info{
+            text-align: center;
+            
+            .slide3-info-title{
+                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
+            }
+            .slide3-info-txt{
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                margin-top: 40px;
+            }
+        }
+
+        .slide3-cards{
+            width: 100%;
+            height: auto;
+            @include m.grid(repeat(auto-fit, minmax(min(100%, 250px), 1fr)), 20px, auto);
+            margin-top: 80px;
+
+            .cards-team {
+                text-align: center;
+
+                .team-img{
+                    padding: 40px;
+                    background-color: map-get(v.$colors, "white" );
+                    border-radius: 16px 16px 0 0;
+                    .team-img-bg{
+                        width: 100%;
+                        border-radius: 50%;
+                        border: solid 4px map-get(v.$colors, "violet" );
+                        background-color: map-get(v.$colors, "white" );
+                        padding: 10px;
+                    }
+                }
+
+                .team-info{
+                    padding: 20px;
+                    background-color: map-get(v.$colors, "violet" );
+                    border-radius: 0 0 16px 16px;
+
+                    .team-info-title{
+                        @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$text-transform);
+                    }
+
+                    .team-info-txt{
+                        @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                        margin-top: 20px;
+                    }
+
+                    .info-social{
+                        margin-top: 40px;
+                        .info-social-icon{
+                            text-decoration: none;
+                            color: map-get(v.$colors, "white");
+                            height: 45px;
+                            width: 45px;
+                            font-size: map-get(v.$font-size, "txt-md");
+                            transition: v.$ease-out;
+                            &:hover {
+                                color: map-get( v.$colors, "purple" );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slide4{
+        text-align: center;
+        .slide4-info{
+           .slide4-info-title{
+            @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
+           }
+           .slide4-info-txt{
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                margin-top: 40px;
+           }
+
+           .slide4-info-span{
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-lg"), map-get(v.$font-weight, "bold"));
+                margin-top: 60px;
+           }
+        }
+    }
+}

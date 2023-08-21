@@ -2,4 +2,24 @@
 @use 'reset';
 @use 'mixin';
 @use 'navbar';
-@use 'banner'
+@use 'footer';
+@use 'animation';
+// moduls-1
+@use '_moduls-1/banner';
+@use '_moduls-1/gclass';
+@use '_moduls-1/discount';
+@use '_moduls-1/pclass';
+@use '_moduls-1/classification';
+@use '_moduls-1/products';
+@use '_moduls-1/subscription';
+// moduls-2
+@use '_moduls-2/products2';
+@use '_moduls-2/products3';
+@use '_moduls-2/carrusel';
+// moduls-3
+@use "_moduls-3/about";
+// moduls-4
+@use '_moduls-4/contact';
+// moduls-5
+@use '_moduls-5/login'
+

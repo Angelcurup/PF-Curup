@@ -1,0 +1,81 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#page-contact {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.12'%3E%3Cpolygon fill='%235a5a5a' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%237f7f7f' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%239c9c9c' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23b4b4b4' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23c9c9c9' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23dcdcdc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    .contact__container {
+        .contact__container_row {
+            .contact__container_row_col{
+                background-color: map-get(v.$colors, "purple" );
+                border-radius: 16px 0 0 16px;
+                padding: 45px;
+                @include m.mv(991px){
+                    text-align: center;
+                    border-radius: 16px 16px 0 0;
+                    padding: 20px
+                };
+                .contact__container_row_col_title {
+                    @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get(v.$font-weight, "bold"), v.$text-transform);
+                    -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                }
+                .contact__container_row_col_icon {
+                    .contact__container_row_col_icon_bg {
+                        height: 3rem;
+                        @include m.mv(991px){
+                            text-align: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 5rem;
+                        };
+                        .contact__container_row_col_icon_bg_txt {
+                            @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, normal))
+                        }
+                    }
+                }
+            }
+            .contact__container_row_col_coment {
+                background-color: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                padding: 45px;
+                border-radius: 0 16px 16px 0;
+                @include m.mv(991px){
+                    border-radius: 0 0 16px 16px;
+                };
+                @include m.mv(767px){
+                    padding: 20px
+                };
+                .contact__container_row_col_coment_title {
+                    @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get(v.$font-weight, "bold"), v.$text-transform);
+                    -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    @include m.mv(991px){
+                        text-align: center
+                    };
+                }
+                .contact__container_row_col_coment_form  {
+                    .contact__container_row_col_coment_form_title{
+                        @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$text-transform);
+                    }
+                    .contact__container_row_col_coment_form_txt {
+                        @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, normal))
+                    }
+                    .contact__container_row_col_coment_button {
+                        @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"), v.$border-radius-sm, none, v.$button-md);
+                        transition: v.$ease-out;
+                        &:hover {
+                            background-color: map-get(v.$colors, "purple" );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

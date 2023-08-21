@@ -1,0 +1,188 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#navbar {
+    .navbar {
+        .container {
+            .sidebar {
+                .offcanvas-body {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link-bg {
+                                text-transform: v.$text-transform;
+                                color: map-get( v.$colors, "black" );
+                                &:hover {
+                                    color: map-get( v.$colors, "lavender" );
+                                }
+                                @include m.mv(991px){
+                                    color: map-get(v.$colors, "white" );
+                                };
+                            }
+                        }
+                    }
+
+                    .login {
+
+                        .nav-link-bg {
+                            color: map-get( v.$colors, "black" );
+                            text-transform: v.$text-transform;
+                            &:hover {
+                                color: map-get( v.$colors, "lavender" );
+                            }
+                            @include m.mv(991px){
+                                color: map-get(v.$colors, "white" );
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#page-product {
+    background-color: map-get( v.$colors, "sky" );
+}
+.contain_products{
+    padding: 0 10%;
+    .products {
+        background-color: map-get(v.$colors, "sky" );
+        .products_conten {
+            .products_conten_img {
+                background: url(/img/g733-logitech.svg) no-repeat center center/contain;
+                overflow: hidden;
+                @include m.mv(991px){
+                    height: 400px;
+                    padding: 20px;
+                };
+            }
+            .products_conten_info {
+                padding: 40px;
+                @include m.mv(623px){
+                    padding: 20px;
+                    text-align: center
+                };
+                
+                .products_conten_info_detail {
+                    .products_conten_info_detail_title {
+                        @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                        -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        @include m.mv(623px){
+                            font-size: map-get( v.$font-size, "sub-title-md" );
+                        };
+                        @include m.mv(424px){
+                            font-size: map-get( v.$font-size, "sub-title-sm" );
+                        };
+                    }
+                    .products_conten_info_detail_colors {
+                        .products_conten_info_detail_colors_title {
+                            @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$text-transform);
+                            @include m.mv(424px){
+                                font-size: map-get( v.$font-size, "txt-sm" );
+                            };
+                        };
+                        padding: 20px 0;
+                        .colors {
+                            padding: 8px 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            @include m.mv(623px){
+                                justify-content: center;
+                            };
+                            .bg_color{
+                                width: 45px;
+                                height: 45px;
+                                margin: 0 10px;
+                                cursor: pointer;
+                            }
+                            .color1{
+                                background-color: #fff;
+                            }
+                            .color2{
+                                background-color: #181616;
+                            }
+                            .color3{
+                                background-color: #7aabf5;
+                            }
+                            .color4{
+                                background-color: #bbaef3;
+                            }
+                        }
+                    }
+
+                }
+                .products_conten_info_price {
+                    
+                    .products_conten_info_price_txt {
+                        @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "semibold"));
+                        @include m.mv(424px){
+                            font-size: map-get( v.$font-size, "txt-sm" );
+                        };
+                    }
+                }
+
+                .products_conten_info_button {
+                    margin: 20px 0;
+                    height: 5rem;
+                    @include m.mv(623px){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center
+                    };
+                    .products_conten_info_button_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+                        text-transform: uppercase;
+                        transition: v.$ease-out;
+                        &:hover {
+                            background-color: map-get(v.$colors, "purple" );
+                        }
+                        
+                        @include m.mv(424px){
+                            font-size: map-get( v.$font-size, "txt-sm" );
+                        };
+                    }
+                }
+
+                .products_description{
+                    .products_description_item {
+                        border: none;
+                        background-color: map-get(v.$colors, "sky" );
+                        .products_description_item_btn {
+                            .products_description_item_btn_title{
+                                background-color: map-get(v.$colors, "sky" );
+                                @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$text-transform);
+                            }
+                        }
+                    }
+                }
+
+                .products_description_follow {
+                    margin-top: 20px;
+                    @include m.flex(flex, row, no-wrap, space-between, center);
+                    @include m.mv(400px){
+                        flex-direction: column;
+                    };
+                    .products_description_follow_title {
+                        padding: 20px;
+                        @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$text-transform);
+                    }
+                    .products_description_follow_social {
+                        padding: 20px;
+                        .social_icon{
+                            text-decoration: none;
+                            color: map-get(v.$colors, "black" );
+                            font-size: map-get(v.$font-size, "txt-sm" );
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

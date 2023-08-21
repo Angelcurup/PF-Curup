@@ -1,0 +1,59 @@
+@use "../variables" as v;
+@use "../mixin" as m;
+
+.products__content {
+    .button_offcanvas {
+        .offcanvas_btn {
+            @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+            text-transform: v.$text-transform;
+            transition: v.$ease-out;
+            &:hover{
+                background-color: map-get(v.$colors, "purple" );
+            }
+        }
+        .offcanvas_bg{
+            background-color: rgba(29, 28, 28, 0.6);
+            backdrop-filter: blur(10px);
+            border: none;
+            .offcanvas_bg_header{
+                .offcanvas_bg_header_title{
+                    @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "bold"), v.$text-transform);
+                    padding: 20px;
+                }
+            }
+            .offcanvas_bg_body {
+                .flex-column{
+                    .nav-item{
+                        background-color: map-get(v.$colors, "white" );
+                        margin: 10px;
+                        border-radius: v.$border-radius-sm;
+                        transition: v.$ease-out;
+                        &:hover{
+                            background-color: map-get(v.$colors, "grey" );
+                        }
+                        .nav-link {
+                            @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"))
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .numbers{
+        display: flex;
+        justify-content: center;
+        .numbers_content{
+            .page-item{
+                .page-link{
+                    @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"))
+                }
+                .active{
+                    background-color: map-get(v.$colors, "black" );
+                    color: map-get(v.$colors, "white" );
+                    border: none;
+                }
+            }
+        }
+    }
+}

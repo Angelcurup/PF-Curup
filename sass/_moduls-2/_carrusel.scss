@@ -1,0 +1,71 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#contain_carousel {
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+
+    .carousel_g {
+        .carousel_g_row {
+            .carousel_g_row_col{
+                padding: 0;
+
+                .carousel_g_slide {
+                    .carousel_g_slide_indicators{
+                        left: 0;
+                        top: auto;
+                        bottom: -60px;
+                        button{
+                            background-color: map-get(v.$colors, "black" );
+                            border-radius: 50%;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    .carousel_g_box{
+                        .carousel_g_box_row{
+                            .carousel_g_box_col{
+                                margin-top: 20px;
+                                .carousel_g_box_info{
+                                    background-color: map-get(v.$colors, "black" );
+                                    @include m.flex(flex, column, nowrap, space-between, center);
+                                    height: 300px;
+                                    padding: 20px;
+                                    border-radius: v.$border-radius-sm;
+                                    .img_area{ 
+                                        .carousel_g_box_img{
+                                            width:200px;
+                                            height: 150px;
+                                        }
+                                    }
+                                    .carousel_g_box_button{
+                                        .carousel_g_box_button_title {
+                                            color: map-get(v.$colors, "white" );
+                                            @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "bold"), v.$text-transform );
+                                            @include m.mv(862px){
+                                                font-size: map-get(v.$font-size, "txt-sm" )
+                                            }
+                                        }
+                                        .carousel_g_box_btn{
+                                            @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
+                                            margin-top: 10px;
+                                            text-transform: v.$text-transform;
+                                            transition: v.$ease-out;
+                                            &:hover {
+                                                background-color: map-get( v.$colors, "purple" );
+                                            }
+                                            @include m.mv(862px){
+                                                font-size: map-get(v.$font-size, "span-sm" )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

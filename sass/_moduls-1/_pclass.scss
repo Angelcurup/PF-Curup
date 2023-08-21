@@ -1,0 +1,66 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#pclass {
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    @include m.grid(repeat(auto-fit, minmax(min(100%, 400px), 1fr)), 20px, auto);
+
+    .pclass__contain {
+        background-color: map-get(v.$colors, "white");
+        @include m.grid(repeat(auto-fit, minmax(min(100%, 300px), 1fr)), 0, auto);
+        border-radius: v.$border-radius-md;
+
+        .pclass__contain_info {
+            padding: 20px;
+
+            .pclass__contain_info_title {
+                @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "tsub-title-md" );
+                };
+            }
+
+            .pclass__contain_info_txt {
+                @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "normal"));
+                margin-top: 20px;
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "txt-sm" );
+                };
+            }
+
+            .pclass__contain_info_button {
+                @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
+                text-transform: v.$text-transform;
+                transition: v.$ease-out;
+                &:hover {
+                    background-color: map-get(v.$colors, "purple");
+                }
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "txt-sm" );
+                };
+            }
+        }
+
+        .pclass__contain_info_img {
+            
+            .pclass_img_rtx4090 {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: rotate(90deg);
+                @include m.mv(749px){
+                    transform: rotate(0);
+                };
+            }
+
+            .pclass_img_playstation {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+}

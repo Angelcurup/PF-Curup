@@ -1,35 +1,38 @@
 // font
 $font-title:'Monoton', cursive;
-$font-txt: 'Roboto', sans-serif;
+
 // colors
-$color-fondo: #09080f;
-$color-one: #a592dd;
-$color-two: #5f509f;
-$color-three: #4e446e;
-$color-four: #7c7cbc;
-$color-five: #a7a6b3;
-$color-text: #fbfbff;
+$colors: (
+    "sky" : #eff6fd,
+    "black" : #121213,
+    "white" : #fbfbff,
+    "lavender" : #5f509f,
+    "violet" : #a592dd,
+    "purple" : #4e446e,
+    "grey"  : #a7a6b3
+);
 
 // fonts-size
-// font-lg
-$font-title-lg: 5rem;
-$font-subtitle-lg: 3rem;
-$font-txt-lg: 1.8rem;
-$font-span-lg: 1.4rem;
-// font-md
-$font-title-md: 4rem;
-$font-subtitle-md: 2rem;
-$font-txt-md: 1rem;
-$font-span-md: 0.8rem;
-// font-sm
-$font-title-sm: 3rem;
-$font-subtitle-sm: 1.6rem;
-$font-txt-sm: 0.8rem;
-$font-span-sm: 0.6rem;
-// font-weight
-$font-bold: 700;
-$font-semibold: 600;
-$font-normal: 500;
+$font-size: (
+    "title-lg" : 5rem,
+    "title-md" : 4rem,
+    "title-sm" : 3rem,
+    "sub-title-lg" : 3rem,
+    "sub-title-md" : 2rem,
+    "sub-title-sm" : 1.6rem,
+    "txt-lg" : 1.8rem,
+    "txt-md" : 1.4rem,
+    "txt-sm" : 1rem,
+    "span-lg" : 1.4rem,
+    "span-md" : 1rem,
+    "span-sm" : 0.8rem
+);
+
+$font-weight: (
+    "bold" : 700,
+    "semibold" : 600,
+    "normal" : 500,
+);
 // text-transform
 $text-transform: uppercase;
 // buttons 
@@ -42,4 +45,5 @@ $border-radius-md: 12px;
 $border-radius-sm: 8px;
 // transition
 $ease-out: all 300ms ease-out;
+
 

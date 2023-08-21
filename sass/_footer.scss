@@ -1,0 +1,84 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+#footer {
+    background-color: map-get(v.$colors, "black");
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+
+    .footer__grup1 {
+        @include m.grid(repeat(auto-fit, minmax(min(100%, 300px), 1fr)), 20px, auto);
+        text-align: center;
+        
+        .footer__grup1_box {
+            margin-top: 20px;
+            
+            .footer__grup1_box_title {
+                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                @include m.mv(623px){
+                    font-size: map-get(v.$font-size, "sub-title-sm");
+                };
+            }
+
+            .footer__grup1_box_txt {
+                @include m.style-txt (map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "normal"));
+                margin-top: 20px;
+            }
+
+            .footer__grup1_box_social {
+
+                .footer__grup1_box_icon {
+                    @include m.flex ( inline-flex, row, nowrap, center, center);
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    border: solid 2px map-get(v.$colors, "white");
+                    border-radius: 50%;
+                    color: map-get(v.$colors, "white");
+                    margin-right: 5px;
+                    transition: v.$ease-out;
+                    &:hover {
+                        border: solid 2px map-get(v.$colors, "purple");
+                        color: map-get(v.$colors, "purple");
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__grup2 {
+        height: auto;
+        width: 100%;
+        padding: 20px 10%;
+        @include m.flex ( flex, row, nowrap, center, end);
+        color: map-get(v.$colors, "white");
+        opacity: 0.5;
+        margin-top: 20px;
+        text-align: center;
+        @include m.mv(623px){
+            font-size: map-get( v.$font-size, "txt-sm" );
+        };
+    }
+}
+
+@media screen and (max-width: 1174px) {
+
+    #footer {
+        
+        .footer__grup1_box_social1 {
+            grid-column: span 2;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #footer {
+        
+        .footer__grup1_box_social1 {
+            grid-column: span 1;
+        }
+    }
+
+}

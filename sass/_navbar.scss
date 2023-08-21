@@ -1,9 +1,90 @@
 @use 'variables' as v;
 
-.navbar {
+#navbar {
     width: 100%;
-    .container_logo {
-        width: 50px;
+    height: auto;
+
+    .navbar {
+        width: 100%;
+
+        .container {
+
+            .logo {
+
+                .logo_img {
+                    width: 50px;
+                }
+            }
+
+            .sidebar {
+
+                .offcanvas-body {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .navbar-nav {
+                        display: flex;
+                        flex-grow: 1;
+                        justify-content: center;
+                        align-items: center;
+
+                        .nav-item {
+
+                            .nav-link {
+
+                                text-transform: v.$text-transform;
+                                color: map-get( v.$colors, "white" );
+                                &:hover {
+                                    color: map-get( v.$colors, "lavender" );
+                                }
+                            }
+                        }
+                    }
+
+                    .login {
+
+                        .nav-link {
+                            color: map-get( v.$colors, "white" );
+                            text-transform: v.$text-transform;
+                            &:hover {
+                                color: map-get( v.$colors, "lavender" );
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
+@media screen and (max-width: 991px) {
+    
+    #navbar {
+    
+        .navbar {
+    
+            .container {
+    
+                .sidebar {
+                    background-color: rgba(165, 146, 221, .15);
+                    backdrop-filter: blur(20px);
+                    color: map-get( v.$colors, "white" );
+
+                    .offcanvas-header {
+
+                        .ofcanvas-tittle {
+                            text-transform: v.$text-transform;
+                            color: map-get( v.$colors, "white" );
+                        }
+
+                    }
+                    .offcanvas-body {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}

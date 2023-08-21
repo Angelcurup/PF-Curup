@@ -1,0 +1,62 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+.products__content {
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    @include m.mv(767px){
+        text-align: center
+    };
+
+    .products__content_title {
+        font-weight: map-get( v.$font-weight, "semibold");
+        font-size: map-get(v.$font-size, "sub-title-md");
+        text-transform: v.$text-transform;
+        color: map-get(v.$colors, "black");
+    }
+
+    .products__content_row {
+
+        .products__content_row_col {
+
+            .products__content_row_col__card {
+                border-radius: v.$border-radius-sm;
+
+                .products__content_row_col__card_img {
+                    padding: 40px;
+                }
+
+                .products__content_row_col__card_body {
+
+                    .products__content_row_col__card_body_title {
+                        text-transform: v.$text-transform;
+                        font-weight: map-get( v.$font-weight, "bold");
+                    }
+                    
+                    .products__content_row_col__card_body_txt {
+                        font-weight: map-get( v.$font-weight, "normal");
+                    }
+                }
+
+                .products__content_row_col__card_price {
+                    @include m.flex ( flex, row, nowrap, space-around, center);
+                    padding: 20px 0;
+
+                    .products__content_row_col__card_price_title {
+                        font-weight: map-get( v.$font-weight, "bold");
+                    }
+
+                    .products__content_row_col__card_price_button {
+                        @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
+                        text-transform: v.$text-transform;
+                        transition: v.$ease-out;
+                        &:hover {
+                            background-color: map-get( v.$colors, "purple" );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

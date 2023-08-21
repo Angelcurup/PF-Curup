@@ -1,0 +1,37 @@
+@use '../variables'as v;
+@use '../mixin' as m;
+
+#classification {
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+
+    .classification_title {
+        font-size: map-get(v.$font-size, "sub-title-md");
+        color: map-get(v.$colors, "black");
+        text-transform: v.$text-transform;
+        font-weight: map-get( v.$font-weight, "semibold");
+        @include m.mv(630px){
+            font-size: map-get(v.$font-size, "sub-title-sm");
+        };
+    }
+
+    .classification__class {
+        width: 100%;
+        height: auto;
+        @include m.grid(repeat(auto-fit, minmax(min(100%, 200px), 1fr)), 20px, 150px);
+        margin-top: 20px;
+
+        .classification__class_button {
+            @include m.style-btn (map-get(v.$colors, "black"), map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, 0);
+            @include m.flex ( flex, column, nowrap, center, center);
+            text-decoration: none;
+            text-transform: v.$text-transform;
+            transition: v.$ease-out;
+            &:hover {
+                background-color: map-get(v.$colors, "grey");
+            }
+        }
+    }
+}
+

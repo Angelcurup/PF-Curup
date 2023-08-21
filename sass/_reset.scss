@@ -7,5 +7,16 @@
 }
 
 body {
-    background-color: v.$color-fondo;
+    background-color: map-get( v.$colors , "sky" );
+}
+
+img{
+    view-timeline-name: --img;
+    view-timeline-axis: block;
+
+    animation-timeline: --img;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
 }

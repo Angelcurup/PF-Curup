@@ -1,0 +1,62 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#discount {
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+
+    .discount__content {
+        background: url(../img/fondo-horizon.svg) no-repeat center/cover;
+        border-radius: v.$border-radius-lg;
+        
+        .discount__content_info {
+            padding: 40px 20px;
+            width: 50%;
+            @include m.mv(774px){
+                width: 100%;
+                text-align: center;
+            };
+
+            .discount__content_info_span {
+                font-size: map-get(v.$font-size, "txt-md");
+                font-weight: map-get( v.$font-weight, "semibold");
+                text-transform: v.$text-transform;
+                background-color: map-get(v.$colors, "violet");
+                padding: 10px 20px;
+                border-radius: v.$border-radius-sm;
+                color: map-get(v.$colors, "white");
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "txt-sm" );
+                };
+            }
+
+            .discount__content_info_title {
+                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                margin-top: 20px;
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "sub-title-md" );
+                };
+            }
+
+            .discount__content_info_txt {
+                @include m.style-txt (map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "normal"));
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "txt-sm" );
+                };
+            }
+
+            .discount__content_info_button {
+                @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+                text-transform: v.$text-transform;
+                transition: v.$ease-out;
+                &:hover {
+                    background-color: map-get(v.$colors, "purple");
+                }
+                @include m.mv(623px){
+                    font-size: map-get( v.$font-size, "txt-sm" );
+                };
+            }
+        }
+    }
+}

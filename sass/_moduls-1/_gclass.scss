@@ -1,0 +1,74 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#gclass {
+    @include m.flex(flex, row, wrap, center, center);
+    padding: 40px 10%;
+    @include m.grid(repeat(auto-fit, minmax(min(100%, 200px), 1fr)), 20px, 400px);
+
+   .gclass-card{
+    width: 100%;
+    height: 100%;
+    border-radius: v.$border-radius-lg;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gclass-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: v.$border-radius-lg;
+    }
+
+    .gclass-card-body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include m.flex(flex, column, nowrap, center, center);
+        top: 0;
+        right: -100%;
+        background: #29477585;
+        border-radius: v.$border-radius-lg;
+        backdrop-filter: blur(3px);
+        padding: 20px;
+        transition: v.$ease-out;
+
+        .gclass-card-body-title {
+            color: map-get(v.$colors, "white" );
+            @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "bold"), v.$text-transform );
+        }
+
+        .gclass-card-body-btn {
+            margin-top: 20px;
+            .gclass-card-body-btn-bg {
+                @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
+                margin-top: 10px;
+                text-transform: v.$text-transform;
+                transition: v.$ease-out;
+                &:hover {
+                    background-color: map-get( v.$colors, "purple" );
+                }
+                
+            }
+        }
+    }
+   }
+
+    
+    .gclass-card:hover .gclass-card-body {
+        right: 0;
+    }
+}
+
+.gclass-card3 {
+
+    @include m.mv(991px){
+        grid-column: span 2;
+    }
+    @include m.mv(524px){
+        grid-column: span 1;
+    }
+}

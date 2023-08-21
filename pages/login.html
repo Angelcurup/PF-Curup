@@ -10,113 +10,115 @@
 
     <title>Login</title>
 </head>
-<body class="page-contacto">
+<body id="page-login">
 
     <header>
         <!-- info-principal -->
-        <div id="contenedor-login">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container">
-                    <!-- logo -->
-                    <a href="#" class="navbar-brand logo">
-                        <img src="../icon/logo.svg" alt="logo intel-laf" class="container-logo">
-                    </a>
-                    <!-- toggle btn -->
-                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- sidebar -->
-                    <div class="sidebar offcanvas offcanvas-end border-0 shadow-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <!-- sidebar header-->
-                        <div class="offcanvas-header">
-                            <span class="ofcanvas-tittle"id="offcanvasNavbarLabel">Intel-Laf</span>
-                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="close">
-                            </button>
-                        </div>
-                        <!-- sidebar body -->
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link mx-4" href="../index.html">home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-4" href="./productos.html">products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-4" href="./nosotros.html">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-4" href="./contacto.html">contact</a>
-                                </li>
-                            </ul>
-                            <!-- login -->
-                            <div class="nav-item p-2 login">
-                                <a href="#" class="nav-link mx-4">login</a>
-                            </div>
+        <div id="navbar">
+             <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+            <div class="container">
+                <!-- logo -->
+                <a href="#" class="navbar-brand logo">
+                    <img src="../icon/logo.svg" alt="logo intel-laf" class="logo_img">
+                </a>
+                <!-- toggle btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-end border-0 shadow-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                    <div class="offcanvas-header">
+                        <span class="ofcanvas-tittle"id="offcanvasNavbarLabel">Intel-Laf</span>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="close">
+                        </button>
+                    </div>
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" href="../index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" href="./products.html">products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" href="./about.html">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" href="./contact.html">contact</a>
+                            </li>
+                        </ul>
+                        <!-- login -->
+                        <div class="nav-item p-2 login">
+                            <a href="#" class="nav-link mx-4">login</a>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
         <!-- end navbar -->
         </div>
     </header>
-
-    <main class="container mt-5 container__login shadow">
-        <div class="row align-items-stretch">
-            <div class="col container__login-img d-none d-md-block col-md-5 col-lg-5 col-xl-6">
-
+    <main class="login-contain">
+        <section class="container container__login shadow">
+            <div class="row align-items-stretch">
+                <div class="col container__login_img d-none d-md-block col-md-5 col-lg-5 col-xl-6">
+                    
+                </div>
+                <div class="col">
+                    <div class="login_content">
+                        <div class="login_content_img d-flex justify-content-center align-items-center mt-4">
+                            <img src="../icon/user-people-account-svgrepo-com.svg" width="100px" alt="login_content_img_icon">
+                        </div>
+                        <h1 class="text-center login_content_title">login</h1>
+                    </div>
+                    <div class="input-group mt-4">
+                        <div class="input-group-text container__login_input border-0">
+                            <img src="../icon/user-svgrepo-com.svg" width="30px" alt="user-icon">
+                        </div>
+                        <input id="user-name" type="text" class="form-control container__login_input_txt" placeholder="Username">
+                    </div>
+                    <div class="input-group mt-2">
+                        <div class="input-group-text container__login_input border-0">
+                            <img src="../icon/key-lock-password-svgrepo-com.svg" width="30px" alt="key-lock-icon">
+                        </div>
+                        <input id="password" type="password" class="form-control container__login_input_txt" placeholder="Password">
+                    </div>
+                    <div class="input_check d-flex justify-content-between mt-3 flex-md-row">
+                        <div class="login_input d-flex align-items-center gap-2">
+                            <input id="check" type="checkbox" class="form-check-input">
+                            <span class="pt-1 login_input_check">remember me</span>
+                        </div>
+                        <div class="input_check pt-1">
+                            <a href="#" class="text-decoration-none container__login_input_span">forgot your password?</a>
+                        </div>
+                    </div>
+                    <div class="btn w-100 mt-4 py-2 container__login_input_button">
+                        login
+                    </div>
+                    <div class="input_check d-flex gap-2 justify-content-center mt-3">
+                        <span class="login_input_check">don't have an account?</span>
+                        <a href="#" class="text-decoration-none container__login_input_span">register</a>
+                    </div>
+                    <div class="input_or p-5">
+                        <div class="text-center container__login_or_position">
+                            <span class="px-3 container__login_or">
+                                or
+                            </span>
+                        </div>
+                    </div>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des-419&ec=GAlA8wE&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-603588113%3A1692594436524672" class="btn d-flex gap-2 justify-content-center mb-5 py-3 container__login_nput_button_google" target="_blank">
+                        <img src="../icon/social-google-plus-svgrepo-com.svg" alt="google-icon" width="30px" class="d-none d-sm-block">
+                        <span class="login_input_check pt-1">continue with google</span>
+                    </a>
+                </div>
             </div>
-            <div class="col">
-                <div class="login__contein">
-                    <div class="d-flex justify-content-center align-items-center mt-4">
-                        <img src="../icon/user-people-account-svgrepo-com.svg" width="100px" alt="login-icon">
-                    </div>
-                    <h1 class="text-center container__login-titulo">login</h1>
-                </div>
-                <div class="input-group mt-4">
-                    <div class="input-group-text container__login-input">
-                        <img src="../icon/user-svgrepo-com.svg" width="30px" alt="user-icon">
-                    </div>
-                    <input type="text" class="form-control container__login-input-txt" placeholder="Username">
-                </div>
-                <div class="input-group mt-2">
-                    <div class="input-group-text container__login-input">
-                        <img src="../icon/key-lock-password-svgrepo-com.svg" width="30px" alt="key-lock-icon">
-                    </div>
-                    <input type="password" class="form-control container__login-input-txt" placeholder="Password">
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <input type="checkbox" class="form-check-input">
-                        <span class="pt-1 container__login-input-check">remember me</span>
-                    </div>
-                    <div class="pt-1">
-                        <a href="#" class="text-decoration-none container__login-input-span">forgot your password?</a>
-                    </div>
-                </div>
-                <div class="btn w-100 mt-4 py-2 container__login-input-button">
-                    login
-                </div>
-                <div class="d-flex gap-2 justify-content-center mt-3">
-                    <span class="container__login-input-check">don't have an account?</span>
-                    <a href="#" class="text-decoration-none container__login-input-span">register</a>
-                </div>
-                <div class="p-5">
-                    <div class="border-bottom text-center container__login-or-position">
-                        <span class="px-3 container__login-or container__login-input-check">
-                            or
-                        </span>
-                    </div>
-                </div>
-                <div class="btn d-flex gap-2 justify-content-center border mb-5 py-3 container__login-input-button-google">
-                    <img src="../icon/social-google-plus-svgrepo-com.svg" alt="google-icon" width="30px" class="d-none d-sm-block">
-                    <span class="container__login-input-check pt-1">continue with google</span>
-                </div>
-            </div>
-        </div>
+        </section>
+    
     </main>
-
+    
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

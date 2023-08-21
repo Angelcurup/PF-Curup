@@ -1,0 +1,79 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+#banner {
+    background: url(../img/fondo.svg) no-repeat center/cover;
+    background-position: 69%;
+    height: auto;
+    padding: 80px 10%;
+    
+    .banner__content{
+        width: 55%;
+        @include m.mv(991px){
+            width: 100%;
+            text-align: center;
+        };
+        
+        .banner__content_sub{
+            @include m.style-title (map-get(v.$colors, "violet"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
+            text-transform: v.$text-transform;
+            -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            @include m.mv(774px){
+                font-size: map-get( v.$font-size, "sub-title-md" );
+            };
+            @include m.mv(774px){
+                font-size: map-get( v.$font-size, "sub-title-sm" );
+            };
+        }
+
+        .banner_content_title {
+            font-family: v.$font-title;
+            @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "title-lg"), map-get( v.$font-weight, "normal"), v.$text-transform);
+            margin-top: 20px;
+            margin-bottom: 40px;
+            -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            @include m.mv(774px){
+                font-size: map-get( v.$font-size, "title-md" );
+            };
+            @include m.mv(623px){
+                font-size: map-get( v.$font-size, "title-sm" );
+            };
+
+            
+        }
+
+        .banner__content_button {
+            @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$border-radius-lg, none, v.$button-lg);
+            text-transform: v.$text-transform;
+            margin-bottom: 20px;
+            transition: v.$ease-out;
+            &:hover {
+                background-color: map-get( v.$colors, "purple" );
+            }
+            @include m.mv(623px){
+                font-size: map-get( v.$font-size, "txt-sm" );
+            };
+        }
+
+        .banner__content_social {
+            margin-top: 20px;
+            .social {
+                @include m.flex ( inline-flex, row, nowrap, center, center);
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                border: solid 2px map-get( v.$colors, "white" );
+                border-radius: 50%;
+                color: map-get( v.$colors, "white" );
+                margin-right: 5px;
+                transition: v.$ease-out;
+                &:hover {
+                    border: solid 2px map-get( v.$colors, "purple" );
+                    color: map-get( v.$colors, "purple" );
+                }
+            }
+        }
+    }
+}

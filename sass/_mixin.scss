@@ -1,0 +1,50 @@
+// mixin styles
+
+@mixin style-title( $argument1, $argument2, $argument3, $argument4 ){
+    color: $argument1;
+    font-size: $argument2;
+    font-weight: $argument3;
+    text-transform: $argument4;
+}
+
+@mixin style-txt( $argument1, $argument2, $argument3 ){
+    color: $argument1;
+    font-size: $argument2;
+    font-weight: $argument3;
+}
+
+@mixin style-btn( $argument1, $argument2, $argument3, $argument4, $argument5, $argument6, $argument7 ){
+    color: $argument1;
+    background-color: $argument2;
+    font-size: $argument3;
+    font-weight: $argument4;
+    border-radius: $argument5;
+    border: $argument6;
+    padding: $argument7;
+}
+
+// mixin flex 
+
+@mixin flex($dis, $direction, $cort, $just, $align,){
+    display: $dis;
+    flex-flow: $direction $cort;
+    justify-content: $just;
+    align-items: $align;
+}
+
+// mixin grid
+
+@mixin grid( $column, $gap, $auto-row){
+    display: grid;
+    grid-template-columns: $column;
+    gap: $gap;
+    grid-auto-rows: $auto-row;
+}
+
+// media queries
+
+@mixin mv( $media){
+    @media screen and (max-width: $media){
+        @content;
+    }
+}
