@@ -35,7 +35,7 @@
             width: 100%;
             z-index: 99;
             @include m.mv(584px) {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
         .starts-body-btn {
@@ -111,6 +111,25 @@
                 @include m.mv(400px) {
                 width: 40px;
                 left: 20%;
+                }
+            }
+        }
+
+        .black__hole {
+            .black__hole--img {
+                width: 500px;
+                position: absolute;
+                top: 20%;
+                right: 15%;
+                z-index: 95;
+                animation: earthEspin var(--time) linear infinite both running;
+                @include m.mv(991px){
+                    width: 250px;
+                    right: 15%;
+                }
+                @include m.mv(400px) {
+                    width: 150px;
+                    bottom: 300px;
                 }
             }
         }
