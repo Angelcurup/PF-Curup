@@ -44,7 +44,10 @@
             }
 
             .slide1-info-txt{
-                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "normal"));
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "txt-sm" )
+                };
             }
 
             .slide1-info-btn{
@@ -81,8 +84,11 @@
         .slide2-info {
 
             .slide2-info-txt{
-                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "normal"));
                 text-align: center;
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "txt-sm" )
+                };
             }
         }
         .slide2-cards{
@@ -125,11 +131,17 @@
             text-align: center;
             
             .slide3-info-title{
-                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "sub-title-md" )
+                };
             }
             .slide3-info-txt{
-                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "normal"));
                 margin-top: 40px;
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "txt-sm" )
+                };
             }
         }
 
@@ -192,15 +204,18 @@
         text-align: center;
         .slide4-info{
            .slide4-info-title{
-            @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
+            @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
            }
            .slide4-info-txt{
-                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"));
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "normal"));
                 margin-top: 40px;
+                @include m.mv(642px){
+                    font-size: map-get(v.$font-size, "txt-sm" )
+                };
            }
 
            .slide4-info-span{
-                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-lg"), map-get(v.$font-weight, "bold"));
+                @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-lg"), map-get(v.$font-weight, "bold"));
                 margin-top: 60px;
            }
         }

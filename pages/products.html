@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="language" content="english">
     <meta name="keywords" content="Dispositivos, Portabilidad, Experiencia Inmersiva">
     <meta name="description" content="Encuentra equipos potentes, accesorios y gadgets para llevar tus juegos al siguiente nivel.">
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -68,157 +65,166 @@
         <!-- end navbar -->
         </div>
     </header>
-
+    <!-- products-description -->
     <main>
-        <section class="contain_products">
-            <section class="products container-fluid">
-                <div class="products_conten row">
-                    <div class="products_conten_img col-lg-6">
-                       <img src="../img/g733-logitech.svg" alt="logitech g733" class="products_conten_img_bg">
+        <section class="container__products">
+            <section class="products__content container-fluid">
+                <div class="content__row row">
+                    <div class="content__picture col-lg-6">
+                       <img src="../img/g733-logitech.svg" alt="logitech g733" class="content__picture--img">
                     </div>
-                    <div class="products_conten_info col-lg-6">
-                        <div class="products_conten_info_detail">
-                            <h2 class="products_conten_info_detail_title">logitech g733</h2>
-                            <div class="products_conten_info_detail_colors">
-                                <h2 class="products_conten_info_detail_colors_title">select color</h2>
+                    <div class="content__col col-lg-6">
+                        <div class="content__details">
+                            <h2 class="details__title">logitech g733</h2>
+                            <div class="details__colors">
+                                <h2 class="colors__title">select color</h2>
                                 <div class="colors">
-                                    <span class="bg_color color1"></span>
-                                    <span class="bg_color color2"></span>
-                                    <span class="bg_color color3"></span>
-                                    <span class="bg_color color4"></span>
+                                    <span class="colors__bg color1"></span>
+                                    <span class="colors__bg color2"></span>
+                                    <span class="colors__bg color3"></span>
+                                    <span class="colors__bg color4"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="products_conten_info_price mt-1">
-                            <h2 class="products_conten_info_price_txt">$250.00</h2>
+                        <div class="content__price mt-1">
+                            <h2 class="price__txt">$250.00</h2>
                         </div>
-                        <div class="products_conten_info_button border-bottom">
-                            <button class="products_conten_info_button_btn btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                              </svg> add to cart</button>
+                        <div class="price__cart border-bottom">
+                            <a href="../pages/not-found.html" class="text-decoration-none cart__button">
+                                <button class="cart__button--bg btn" href="../pages/not-found.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg>
+                                    add to cart
+                                </button>
+                            </a>
                         </div>
     
-                        <div class="accordion mt-4 products_description" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item products_description_item">
-                              <h2 class="accordion-header products_description_item_btn">
-                                <button class="accordion-button products_description_item_btn_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        <div class="accordion mt-4 content__description" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item description__item">
+                              <h2 class="accordion-header item__button">
+                                <button class="accordion-button item__button--title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                   description
                                 </button>
                               </h2>
-                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show shadow-sm-none products_description_item_detail">
-                                <div class="accordion-body products_description_item_detail_body">
-                                  <p class="products_description_item_detail_body_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa aspernatur vero maxime ut doloremque, pariatur saepe architecto doloribus laborum! Eum quae illum consequuntur nihil alias cumque totam. Quis, velit?</p>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show description__details">
+                                <div class="accordion-body details__body">
+                                  <p class="body__txt">Wireless gaming headset designed for performance and comfort. Outfitted with all the surround sound, voice filters, and advanced lighting you need to look, sound, and play with more style than ever.
+                                </p>
                                 </div>
                               </div>
                             </div>
-                            <div class="accordion-item products_description_item">
-                              <h2 class="accordion-header products_description_item_btn">
-                                <button class="accordion-button collapsed products_description_item_btn_title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div class="accordion-item description__item">
+                              <h2 class="accordion-header item__button">
+                                <button class="accordion-button collapsed item__button--title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                   more details
                                 </button>
                               </h2>
-                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse products_description_item_detail">
-                                <div class="accordion-body products_description_item_detail_body">
-                                    <p class="products_description_item_detail_body_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa aspernatur vero maxime ut doloremque, pariatur saepe architecto doloribus laborum! Eum quae illum consequuntur nihil alias cumque totam. Quis, velit?</p>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse description__details">
+                                <div class="accordion-body details__body">
+                                    <p class="body__txt">
+                                        Length: 7.64 in (194 mm)<br/>
+                                        Width: 0.6 ft (190 mm)<br/>
+                                        Depth: 3.27 in (83 mm)<br/>
+                                        Weight: 9.81 oz (278 g)
+                                    </p>
                                 </div>
                               </div>
                             </div>
                           </div>
                           
-                          <div class="products_description_follow border-top">
-                            <span class="products_description_follow_title">shared</span>
-                            <div class="products_description_follow_social">
-                                <a href="#" class="social_icon fa fa-facebook"></a>
-                                <a href="#" class="social_icon fa fa-instagram"></a>
-                                <a href="#" class="social_icon fa fa-twitter"></a>
+                          <div class="description__follow border-top">
+                            <span class="follow__title">shared</span>
+                            <div class="follow__social">
+                                <a href="#" class="social__icon fa fa-facebook"></a>
+                                <a href="#" class="social__icon fa fa-instagram"></a>
+                                <a href="#" class="social__icon fa fa-twitter"></a>
                             </div>
                           </div>
                     </div>
                 </div>
             </section>
         </section>
-
-        <section id="contain_carousel">
-            <div class="carousel_g container-fluid">
-                <div class="carousel_g_row row">
-                    <div class="carousel_g_row_col col-12">
-                        <div id="carouselExampleIndicators" class="carousel slide carousel_g_slide">
-                            <div class="carousel-indicators carousel_g_slide_indicators">
+        <!-- carrusel -->
+        <section id="container__carousel">
+            <div class="carousel__content container-fluid">
+                <div class="content__row row">
+                    <div class="content__col col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide content__slide">
+                            <div class="carousel-indicators slide__indicator">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             </div>
-                            <div class="carousel-inner carousel_g_box">
-                                <div class="carousel-item active carousel_g_box">
-                                    <div class="carousel_g_box_row row">
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/logitech-g203.svg" alt="logitech g203" class="carousel_g_box_img">
+                            <div class="carousel-inner content__box">
+                                <div class="carousel-item active box__item">
+                                    <div class="box__row row">
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/logitech-g203.svg" alt="logitech g203" class="box__picture--img">
                                                 </div>
-                                                <div class="img-text text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">logitech g203.</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/logitech-g502.svg" alt="logitech g502" class="carousel_g_box_img">
-                                                </div>
-                                                <div class="text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">logitech g502</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
+                                                <div class="img-text text-center box__button">
+                                                    <h2 class="box__button--title">logitech g203.</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/logitech-g920.svg" alt="logitech g920" class="carousel_g_box_img">
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/logitech-g502.svg" alt="logitech g502" class="box__picture--img">
                                                 </div>
-                                                <div class="img-text text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">logitech g920.</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
+                                                <div class="text-center box__button">
+                                                    <h2 class="box__button--title">logitech g502</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/logitech-g920.svg" alt="logitech g920" class="box__picture--img">
+                                                </div>
+                                                <div class="text-center box__button">
+                                                    <h2 class="box__button--title">logitech g920.</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="carousel-item carousel_g_box">
-                                    <div class="carousel_g_box_row row">
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/keyboard-g-pro.svg" alt="logitech keyboard pro x" class="carousel_g_box_img">
+                                <div class="carousel-item box__item">
+                                    <div class="box__row row">
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/keyboard-g-pro.svg" alt="logitech keyboard pro x" class="box__picture--img">
                                                 </div>
-                                                <div class="img-text text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">logitech g pro</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/headset-g-x.svg" alt="logitech headset g x2" class="carousel_g_box_img">
-                                                </div>
-                                                <div class="text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">logitech g pro x2</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
+                                                <div class="text-center box__button">
+                                                    <h2 class="box__button--title">logitech g pro</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel_g_box_col col-md-4">
-                                            <div class="carousel_g_box_info single-box">
-                                                <div class="img_area">
-                                                    <img src="../img/powerplay.svg" alt="logitech mousepad powerplay" class="carousel_g_box_img">
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/headset-g-x.svg" alt="logitech headset g x2" class="box__picture--img">
                                                 </div>
-                                                <div class="img-text text-center carousel_g_box_button">
-                                                    <h2 class="carousel_g_box_button_title">powerplay</h2>
-                                                    <button class="btn carousel_g_box_btn">buy now</button>
+                                                <div class="text-center box__button">
+                                                    <h2 class="box__button--title">logitech g pro x2</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__col col-md-4">
+                                            <div class="box__info single-box">
+                                                <div class="box__picture">
+                                                    <img src="../img/powerplay.svg" alt="logitech mousepad powerplay" class="box__picture--img">
+                                                </div>
+                                                <div class="text-center box__button">
+                                                    <h2 class="box__button--title">powerplay</h2>
+                                                    <button class="btn box__button--bg">buy now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,16 +237,17 @@
             </div>
         </section>
 
-        <section class="container-fluid py-5 products__content">
-            <div class="button_offcanvas">
-                <button class="btn offcanvas_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">watch more</button>
-                <div class="offcanvas offcanvas-start offcanvas_bg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                    <div div class="offcanvas-header offcanvas_bg_header">
-                        <h5 class="offcanvas-title offcanvas_bg_header_title" id="offcanvasScrollingLabel">products</h5>
+        <section class="container-fluid py-5 products__container">
+            <!-- button-clasification -->
+            <div class="container__offcanvas">
+                <button class="btn offcanvas__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">watch more</button>
+                <div class="offcanvas offcanvas-start offcanvas__button--bg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div div class="offcanvas-header offcanvas__header">
+                        <h5 class="offcanvas-title header__title" id="offcanvasScrollingLabel">products</h5>
                         <button type="button" class="btn-close btn-close-white border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body offcanvas_bg_body">
-                        <ul class="nav flex-column">
+                    <div class="offcanvas-body offcanvas__body">
+                        <ul class="nav flex-column body__nav">
                             <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#">
                                 <img src="../icon/headset-music-player-svgrepo-com.svg" alt="iphone" class="classification__class_button_img" width="40px">
@@ -270,130 +277,147 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 py-5 products__content_row">
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/iphon-14-pro-max.svg" class="card-img-top products__content_row_col__card_img" alt="iphon 14 pro max">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">iphon 14 pro max</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+            <!-- products -->
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 py-5 container__content">
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/iphon-14-pro-max.svg" class="card-img-top card__img" alt="iphon 14 pro max">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">iphon 14 pro max</h4>
+                          <p class="card-text body__txt">Ceramic Shield front stainless steel design with textured matte glass back</p>
                         </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/iphon-13-pro.svg" class="card-img-top products__content_row_col__card_img" alt="iphon 13 pro max">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">iphon 13 pro max</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
-                        </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
                         </div>
                       </div>
                 </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/iphon-12.svg" class="card-img-top products__content_row_col__card_img" alt="iphone 12">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">iphon 12</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/iphon-13-pro.svg" class="card-img-top card__img" alt="iphon 13 pro max">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">iphon 13 pro max</h4>
+                          <p class="card-text body__txt">Ceramic Shield front, Stainless steel design with textured matte glass back</p>
                         </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/airpods-pro-max.svg" class="card-img-top products__content_row_col__card_img" alt="airpods max">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">airpods max</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
-                        </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
                         </div>
                       </div>
                 </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/headphods-beats.svg" class="card-img-top products__content_row_col__card_img" alt="beats solo pro">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">beats solo pro</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/iphon-12.svg" class="card-img-top card__img" alt="iphone 12">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">iphon 12</h4>
+                          <p class="card-text body__txt">Ceramic Shield front Aluminum design with<br/>glass back</p>
                         </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/headphones-sony.svg" class="card-img-top products__content_row_col__card_img" alt="headphones sony">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">WH-1000XM5 sony</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
-                        </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
                         </div>
                       </div>
                 </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/pc-asus.svg" class="card-img-top products__content_row_col__card_img" alt="laptop asus rog strix">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">asus roge strix</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/airpods-pro-max.svg" class="card-img-top card__img" alt="airpods max">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">airpods max</h4>
+                          <p class="card-text body__txt">The perfect balance between incredible high-fidelity audio and the magical ease of use of AirPods</p>
                         </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/macbook-air.svg" class="card-img-top products__content_row_col__card_img" alt="laptop macbook air">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">macbook air m1</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
-                        </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
                         </div>
                       </div>
                 </div>
-                <div class="col products__content_row_col">
-                    <div class="card border-0 products__content_row_col__card">
-                        <img src="../img/alienware-gaming.svg" class="card-img-top products__content_row_col__card_img" alt="alienware x17">
-                        <div class="card-body products__content_row_col__card_body">
-                          <h4 class="card-title products__content_row_col__card_body_title">alienware x17</h4>
-                          <p class="card-text products__content_row_col__card_body_txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quasi?</p>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/headphods-beats.svg" class="card-img-top card__img" alt="beats solo pro">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">beats solo pro</h4>
+                          <p class="card-text body__txt">Up to 22 hours of listening time (up to 40 hours with ANC and transparency turned off)</p>
                         </div>
-                        <div class="products__content_row_col__card_price mb-2">
-                            <h5 class="products__content_row_col__card_price_title">$.1099</h5>
-                            <button href="#" class="products__content_row_col__card_price_button">buy now</button>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/headphones-sony.svg" class="card-img-top card__img" alt="headphones sony">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">WH-1000XM5 sony</h4>
+                          <p class="card-text body__txt">With four microphones on each earcup, this model is our biggest breakthrough in Noise Canceling technology.</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/pc-asus.svg" class="card-img-top card__img" alt="laptop asus rog strix">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">asus roge strix</h4>
+                          <p class="card-text body__txt">The ASUS ROG Strix G15, in its version with the Ryzen 9 5900HX and the premiere of the AMD Radeon RX 6800M GPU</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/macbook-air.svg" class="card-img-top card__img" alt="laptop macbook air">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">macbook air m1</h4>
+                          <p class="card-text body__txt">13.3-inch LED-backlit display with IPS technology; 2560 x 1600 native resolution at 227 pixels per inch</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col content__col">
+                    <div class="card border-0 col__card">
+                        <img src="../img/alienware-gaming.svg" class="card-img-top card__img" alt="alienware x17">
+                        <div class="card-body card__body">
+                          <h4 class="card-title body__title">alienware x17</h4>
+                          <p class="card-text body__txt">Its configurations are spectacular and allow access to the latest from Intel and NVIDIA</p>
+                        </div>
+                        <div class="card__price mb-2">
+                            <h5 class="price__title">$.1099</h5>
+                            <a href="#" class="price__button">
+                                <button href="#" class="price__button--bg">buy now</button>
+                            </a>
                         </div>
                       </div>
                 </div>
             </div>
-            
+            <!-- navegation -->
             <nav aria-label="Page navigation example" class="numbers">
-                <ul class="pagination numbers_content">
+                <ul class="pagination numbers__content">
                   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                   <li class="page-item"><a class="page-link active" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -402,44 +426,49 @@
                 </ul>
               </nav>
         </section>
-        
-
+<!-- suscription -->
         <section id="subscription">
-            <div class="subscription__content">
-                <h4 class="subscription__content_title">subscribe</h4>
-                <p class="subscription__content_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sequi?</p>
-                <form action="#" class="subscription__content_form">
-                    <input id="your-email" type="email" class="subscription__content_form_email" placeholder="email">
-                    <input id="Submit" type="submit" value="subscribe" class="subscription__content_form_email_button">
+            <div class="subscription__container">
+                <h4 class="container__title">subscribe</h4>
+                <p class="container__txt">Subscribe and to have information about new products</p>
+                <form action="#" class="container__form">
+                    <div class="form__email">
+                        <label for="your-email" class="email__txt">email</label>
+                        <input id="your-email" type="email" class="email__address" placeholder="address">
+                    </div>
+                    <input type="submit" value="subscribe" class="form__email--button">
                 </form>
             </div>
         </section>
     </main>
-
+    <!-- footer -->
     <footer id="footer">
-        <div class="footer__grup1">
-            <div class="footer__grup1_box">
-                <figure class="footer__grup1_box_logo">
-                    <a href="#">
-                        <img src="../icon/logo.svg" alt="Logo intel-laf" class="footer__grup1_box_logo_img">
+        <div class="footer__container">
+            <div class="container__content">
+                <figure class="content__logo">
+                    <a href="#" class="logo__picture">
+                        <img src="../icon/logo.svg" alt="Logo intel-laf" class="logo__picture--img">
                     </a>
                 </figure>
             </div>
-            <div class="footer__grup1_box">
-                <h4 class="footer__grup1_box_title">about us</h4>
-                <p class="footer__grup1_box_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem nisi veniam debitis est voluptatum, reprehenderit accusantium quibusdam eaque qui!</p>
+            <div class="container__content">
+                <h4 class="content__title">about us</h4>
+                <p class="content__txt">Welcome to intelaf, your trusted destination for 
+                    innovative electronic solutions. We pride ourselves on being an industry leader, 
+                    providing cutting-edge technology and high-quality electronic products to 
+                    customers around the world.</p>
             </div>
-            <div class="footer__grup1_box footer__grup1_box_social1">
-                <h4 class="footer__grup1_box_title">followin</h4>
-                <div class="footer__grup1_box_social">
-                    <a href="https://es-la.facebook.com/" class="footer__grup1_box_icon fa fa-facebook" target="_blank"></a>
-                    <a href="https://www.instagram.com/" class="footer__grup1_box_icon fa fa-instagram" target="_blank"></a>
-                    <a href="https://twitter.com/" class="footer__grup1_box_icon fa fa-twitter" target="_blank"></a>
-                    <a href="https://www.youtube.com/" class="footer__grup1_box_icon fa fa-youtube" target="_blank"></a>
+            <div class="container__content container__content--social">
+                <h4 class="content__title">followin</h4>
+                <div class="content__social">
+                    <a href="https://es-la.facebook.com/" class="social__icon fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="social__icon fa fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/" class="social__icon fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="social__icon fa fa-youtube" target="_blank"></a>
                 </div>
             </div>
         </div>
-        <div class="footer__grup2">
+        <div class="footer__container--2">
             <span>&copy; 2023 <b>Intel-Laf</b> - Todos los Derechos Reservados.</span>
         </div>
     </footer>

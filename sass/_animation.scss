@@ -35,7 +35,50 @@
     }
   }
 
+  
+@keyframes mandoLaunch {
+  0% {
+    transform: translate(-50vh, 0px);
+  }
+  100% {
+    transform: translate(50vh, -900px) rotate(-360deg);
+  }
+}
+  
+  @keyframes earthEspin {
+    100% {
+      transform: rotate(-360deg);
+      transition: transform 10s;
+    }
+  }
 
-  
-  
+  @keyframes moonEspin {
+    100% {
+      transform: rotate(-360deg);
+      transition: transform 5s;
+    }
+  }
+
+  @keyframes robotMove {
+    100% {
+      transform: translate(-180px, -180px);
+    }
+  }
+
+  @keyframes robotRotate {
+    100% {
+      transform: rotate(-720deg);
+    }
+  }
+
+  @keyframes glowinStars {
+    40% {
+      opacity: 0.2;
+    }
+    90%,100% {
+      opacity: 1;
+      transform: scale(1.1);
+      border: 50%;
+    }
+  }
   

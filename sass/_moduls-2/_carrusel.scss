@@ -1,18 +1,18 @@
 @use '../variables' as v;
 @use '../mixin' as m;
 
-#contain_carousel {
+#container__carousel {
     width: 100%;
     height: auto;
     padding: 20px 10%;
 
-    .carousel_g {
-        .carousel_g_row {
-            .carousel_g_row_col{
+    .carousel__content {
+        .content__row {
+            .content__col {
                 padding: 0;
 
-                .carousel_g_slide {
-                    .carousel_g_slide_indicators{
+                .content__slide {
+                    .slide__indicator{
                         left: 0;
                         top: auto;
                         bottom: -60px;
@@ -23,40 +23,45 @@
                             height: 15px;
                         }
                     }
-                    .carousel_g_box{
-                        .carousel_g_box_row{
-                            .carousel_g_box_col{
+                    .content__box{
+                        .box__item{
+                            .box__row{
                                 margin-top: 20px;
-                                .carousel_g_box_info{
-                                    background-color: map-get(v.$colors, "black" );
-                                    @include m.flex(flex, column, nowrap, space-between, center);
-                                    height: 300px;
-                                    padding: 20px;
-                                    border-radius: v.$border-radius-sm;
-                                    .img_area{ 
-                                        .carousel_g_box_img{
-                                            width:200px;
-                                            height: 150px;
-                                        }
+                                .box__col {
+                                    @include m.mv(767px){
+                                        margin-top: 20px;
                                     }
-                                    .carousel_g_box_button{
-                                        .carousel_g_box_button_title {
-                                            color: map-get(v.$colors, "white" );
-                                            @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "bold"), v.$text-transform );
-                                            @include m.mv(862px){
-                                                font-size: map-get(v.$font-size, "txt-sm" )
+                                    .box__info{
+                                        background-color: map-get(v.$colors, "black" );
+                                        @include m.flex(flex, column, nowrap, space-between, center);
+                                        height: 300px;
+                                        padding: 20px;
+                                        border-radius: v.$border-radius-sm;
+                                        .box__picture{ 
+                                            .box__picture--img{
+                                                width:200px;
+                                                height: 150px;
                                             }
                                         }
-                                        .carousel_g_box_btn{
-                                            @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
-                                            margin-top: 10px;
-                                            text-transform: v.$text-transform;
-                                            transition: v.$ease-out;
-                                            &:hover {
-                                                background-color: map-get( v.$colors, "purple" );
+                                        .box__button{
+                                            .box__button--title {
+                                                color: map-get(v.$colors, "white" );
+                                                @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "bold"), v.$text-transform );
+                                                @include m.mv(862px){
+                                                    font-size: map-get(v.$font-size, "txt-sm" )
+                                                }
                                             }
-                                            @include m.mv(862px){
-                                                font-size: map-get(v.$font-size, "span-sm" )
+                                            .box__button--bg{
+                                                @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-sm);
+                                                margin-top: 10px;
+                                                text-transform: v.$text-transform;
+                                                transition: v.$ease-out;
+                                                &:hover {
+                                                    background-color: map-get( v.$colors, "purple" );
+                                                }
+                                                @include m.mv(862px){
+                                                    font-size: map-get(v.$font-size, "span-sm" )
+                                                }
                                             }
                                         }
                                     }

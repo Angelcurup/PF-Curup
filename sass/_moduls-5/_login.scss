@@ -10,16 +10,15 @@
     padding: 0 10%;
 }
 
-.login-contain {
+.container__login {
     padding: 40px 0;
-    .container__login {
+    .login__content {
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         border-radius: v.$border-radius-lg;
-        .row {
-            .container__login_img {
-
-                .container__login_img_bg{
+        .content__items {
+            .content__picture {
+                .content__picture--img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -27,9 +26,14 @@
 
             }
             
-            .col{
-                .login_content {
-                    .login_content_title{
+            .content__col{
+                .content__login {
+                    .login__picture {
+                        .login__picture--icon{
+                            width: 100px;
+                        }
+                    }
+                    .login__title{
                         @include m.style-title(map-get(v.$colors, "black"), map-get(v.$font-size, "sub-title-sm"), map-get(v.$font-weight, "bold"), v.$text-transform);
                         -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                         animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -38,28 +42,48 @@
                         };
                     }
                 }
-                .input-group {
-                    .container__login_input {
-                        background-color: map-get( v.$colors, "violet" );
+                .login__input {
+                    .login__input--txt {
+                        color: map-get( v.$colors, "white" );
+                        font-size: map-get(v.$font-size, "txt-sm" );
+                        text-transform: v.$text-transform;
                     }
-                    .container__login_input_txt {
+                    .login__user {
+                        background-color: map-get( v.$colors, "violet" );
+                        border: v.$border-radius-sm;
+                        .login__user--img{
+                            width: 30px;
+                            
+                        }
+                    }
+                    .login__user--txt {
                         @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "text-md"), map-get(v.$font-weight, "semibold"));
                     }
                 }
-                .input_check {
-                    .login_input {
-                        .login_input_check {
-                            @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"));
-                            text-transform: capitalize;
-                        }
-                    }
-                    .container__login_input_span {
+                .login__check {
+                    .check__txt {
                         color: map-get(v.$colors, "black" );
-                        text-transform: capitalize;
-                        font-weight: map-get(v.$font-weight, "semibold" );
-                        transition: v.$ease-out;
-                        &:hover {
-                            color: map-get(v.$colors, "purple" );
+                            text-transform: capitalize;
+                            font-weight: map-get(v.$font-weight, "semibold" );
+                    }
+                    .check__txt--bg{
+                        color: map-get(v.$colors, "violet" );
+                            text-transform: capitalize;
+                            font-weight: map-get(v.$font-weight, "semibold" );
+                    }
+                    .check__input {
+                        .check__form--txt {
+                                @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"));
+                                text-transform: capitalize;
+                        }
+                        .check__form--txt {
+                            color: map-get(v.$colors, "black" );
+                            text-transform: capitalize;
+                            font-weight: map-get(v.$font-weight, "semibold" );
+                            transition: v.$ease-out;
+                            &:hover {
+                                color: map-get(v.$colors, "violet" );
+                            }
                         }
                     }
                     @include m.mv ("420px"){
@@ -68,17 +92,7 @@
                         align-items: center
                     };
                 }
-                .input_or{
-                    .container__login_or_position {
-                        height: 0.9rem;
-                        display: block;
-                        .container__login_or{
-                            @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"));
-                            text-transform: capitalize;
-                        }
-                    }
-                }
-                .container__login_input_button {
+                .check__form--button {
                     @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, "");
                     text-transform: capitalize;
                     transition: v.$ease-out;
@@ -86,8 +100,17 @@
                         background-color: map-get(v.$colors, "purple" );
                     }
                 }
-    
-                .container__login_nput_button_google {
+                .login__or{
+                    .or__position {
+                        height: 0.9rem;
+                        display: block;
+                        .or__bg{
+                            @include m.style-txt (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"));
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+                .login__button--google {
                     @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, "");
                     transition: v.$ease-out;
                     &:hover {

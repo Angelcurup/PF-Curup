@@ -6,11 +6,11 @@
     height: auto;
     padding: 20px 10%;
 
-    .discount__content {
+    .discount__container {
         background: url(../img/fondo-horizon.svg) no-repeat center/cover;
         border-radius: v.$border-radius-lg;
         
-        .discount__content_info {
+        .container__content {
             padding: 40px 20px;
             width: 50%;
             @include m.mv(774px){
@@ -18,7 +18,7 @@
                 text-align: center;
             };
 
-            .discount__content_info_span {
+            .content__span {
                 font-size: map-get(v.$font-size, "txt-md");
                 font-weight: map-get( v.$font-weight, "semibold");
                 text-transform: v.$text-transform;
@@ -31,7 +31,7 @@
                 };
             }
 
-            .discount__content_info_title {
+            .content__title {
                 @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
                 margin-top: 20px;
                 @include m.mv(623px){
@@ -39,24 +39,27 @@
                 };
             }
 
-            .discount__content_info_txt {
+            .content__txt {
                 @include m.style-txt (map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "normal"));
                 @include m.mv(623px){
                     font-size: map-get( v.$font-size, "txt-sm" );
                 };
             }
 
-            .discount__content_info_button {
-                @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
-                text-transform: v.$text-transform;
-                transition: v.$ease-out;
-                &:hover {
-                    background-color: map-get(v.$colors, "purple");
+            .content__button {
+                .content__button--bg {
+                    @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+                    text-transform: v.$text-transform;
+                    transition: v.$ease-out;
+                    &:hover {
+                        background-color: map-get(v.$colors, "purple");
+                    }
+                    @include m.mv(623px){
+                        font-size: map-get( v.$font-size, "txt-sm" );
+                    };
                 }
-                @include m.mv(623px){
-                    font-size: map-get( v.$font-size, "txt-sm" );
-                };
             }
+
         }
     }
 }

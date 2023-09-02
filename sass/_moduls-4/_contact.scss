@@ -11,8 +11,8 @@
 
 .contact{
     .contact__container {
-        .contact__container_row {
-            .contact__container_row_col{
+        .container__content {
+            .content__col{
                 background-color: map-get(v.$colors, "purple" );
                 border-radius: 16px 0 0 16px;
                 padding: 45px;
@@ -21,13 +21,13 @@
                     border-radius: 16px 16px 0 0;
                     padding: 20px
                 };
-                .contact__container_row_col_title {
+                .content__title {
                     @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get(v.$font-weight, "bold"), v.$text-transform);
                     -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                     animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                 }
-                .contact__container_row_col_icon {
-                    .contact__container_row_col_icon_bg {
+                .content__icon {
+                    .content__icon--bg {
                         height: 3rem;
                         @include m.mv(991px){
                             text-align: center;
@@ -35,13 +35,13 @@
                             justify-content: center;
                             height: 5rem;
                         };
-                        .contact__container_row_col_icon_bg_txt {
+                        .content__icon--txt {
                             @include m.style-txt(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, normal))
                         }
                     }
                 }
             }
-            .contact__container_row_col_coment {
+            .content__coment {
                 background-color: rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(10px);
                 padding: 45px;
@@ -52,7 +52,7 @@
                 @include m.mv(767px){
                     padding: 20px
                 };
-                .contact__container_row_col_coment_title {
+                .coment__title {
                     @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get(v.$font-weight, "bold"), v.$text-transform);
                     -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                     animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -60,16 +60,17 @@
                         text-align: center
                     };
                 }
-                .contact__container_row_col_coment_form  {
-                    .contact__container_row_col_coment_form_title{
+                .coment__form  {
+                    .form__title{
                         @include m.style-title(map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$text-transform);
                     }
-                    .contact__container_row_col_coment_form_txt {
+                    .form__txt {
                         @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, normal))
                     }
-                    .contact__container_row_col_coment_button {
+                    .form__button {
                         @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "normal"), v.$border-radius-sm, none, v.$button-md);
                         transition: v.$ease-out;
+                        text-transform: v.$text-transform;
                         &:hover {
                             background-color: map-get(v.$colors, "purple" );
                         }

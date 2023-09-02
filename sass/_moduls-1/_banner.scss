@@ -14,7 +14,7 @@
             text-align: center;
         };
         
-        .banner__content_sub{
+        .content__sub{
             @include m.style-title (map-get(v.$colors, "violet"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
             text-transform: v.$text-transform;
             -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -27,7 +27,7 @@
             };
         }
 
-        .banner_content_title {
+        .content__title {
             font-family: v.$font-title;
             @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "title-lg"), map-get( v.$font-weight, "normal"), v.$text-transform);
             margin-top: 20px;
@@ -40,11 +40,9 @@
             @include m.mv(623px){
                 font-size: map-get( v.$font-size, "title-sm" );
             };
-
-            
         }
 
-        .banner__content_button {
+        .content__button {
             @include m.style-btn (map-get(v.$colors, "white"), map-get(v.$colors, "violet"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$border-radius-lg, none, v.$button-lg);
             text-transform: v.$text-transform;
             margin-bottom: 20px;
@@ -57,9 +55,9 @@
             };
         }
 
-        .banner__content_social {
+        .content__social {
             margin-top: 20px;
-            .social {
+            .social__icon {
                 @include m.flex ( inline-flex, row, nowrap, center, center);
                 text-decoration: none;
                 width: 45px;

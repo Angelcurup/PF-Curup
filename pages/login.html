@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="language" content="english">
     <meta name="description" content="Bienvenido! Inicia sesión en tu cuenta para acceder a una experiencia de compra personalizada.">
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -67,55 +64,57 @@
         <!-- end navbar -->
         </div>
     </header>
-    <main class="login-contain">
-        <section class="container container__login shadow">
-            <div class="row align-items-stretch">
-                <div class="col container__login_img d-none d-md-block col-md-5 col-lg-5 col-xl-6">
-                    <img src="../img/login.svg" alt="login" class="container__login_img_bg">
+    <main class="container__login">
+        <section class="container login__content shadow">
+            <div class="row align-items-stretch content__items">
+                <div class="col content__picture d-none d-md-block col-md-5 col-lg-5 col-xl-6">
+                    <img src="../img/login.svg" alt="login" class="content__picture--img">
                 </div>
-                <div class="col">
-                    <div class="login_content">
-                        <div class="login_content_img d-flex justify-content-center align-items-center mt-4">
-                            <img src="../icon/user-people-account-svgrepo-com.svg" width="100px" alt="login_content_img_icon">
+                <div class="col content__col">
+                    <div class="content__login">
+                        <div class="login__picture d-flex justify-content-center align-items-center mt-4">
+                            <img src="../icon/user-people-account-svgrepo-com.svg" alt="login icon" class="login__picture--icon">
                         </div>
-                        <h1 class="text-center login_content_title">login</h1>
+                        <h1 class="text-center login__title">login</h1>
                     </div>
-                    <div class="input-group mt-4">
-                        <div class="input-group-text container__login_input border-0">
-                            <img src="../icon/user-svgrepo-com.svg" width="30px" alt="user-icon">
+                    <div class="input-group mt-4 login__input d-flex flex-column">
+                        <label for="user-name" class="login__input--txt form-label">user name</label>
+                        <div class="input-group-text login__user border-0">
+                            <img src="../icon/user-svgrepo-com.svg" alt="user-icon" class="login__user--img">
+                            <input id="user-name" type="text" class="form-control login__user--txt" placeholder="name">
                         </div>
-                        <input id="user-name" type="text" class="form-control container__login_input_txt" placeholder="Username">
                     </div>
-                    <div class="input-group mt-2">
-                        <div class="input-group-text container__login_input border-0">
-                            <img src="../icon/key-lock-password-svgrepo-com.svg" width="30px" alt="key-lock-icon">
+                    <div class="input-group mt-2 login__input d-flex flex-column">
+                        <label for="password" class="login__input--txt form-label">password</label>
+                        <div class="input-group-text login__user border-0">
+                            <img src="../icon/key-lock-password-svgrepo-com.svg" alt="key-lock-icon" class="login__user--img">
+                            <input id="password" type="password" class="form-control login__user--txt" placeholder="******">
                         </div>
-                        <input id="password" type="password" class="form-control container__login_input_txt" placeholder="Password">
                     </div>
-                    <div class="input_check d-flex justify-content-between mt-3 flex-md-row">
-                        <div class="login_input d-flex align-items-center gap-2">
+                    <div class="login__check d-flex justify-content-between mt-3 flex-md-row">
+                        <div class="check__input d-flex align-items-center gap-2">
                             <input id="check" type="checkbox" class="form-check-input">
-                            <span class="pt-1 login_input_check">remember me</span>
+                            <span class="pt-1 check__form--txt">remember me</span>
                         </div>
-                        <div class="input_check pt-1">
-                            <a href="#" class="text-decoration-none container__login_input_span">forgot your password?</a>
+                        <div class="check__input pt-1">
+                            <a href="#" class="text-decoration-none check__form--txt">forgot your password?</a>
                         </div>
                     </div>
-                    <div class="btn w-100 mt-4 py-2 container__login_input_button">
+                    <div class="btn w-100 mt-4 py-2 check__form--button">
                         login
                     </div>
-                    <div class="input_check d-flex gap-2 justify-content-center mt-3">
-                        <span class="login_input_check">don't have an account?</span>
-                        <a href="#" class="text-decoration-none container__login_input_span">register</a>
+                    <div class="login__check d-flex gap-2 justify-content-center mt-3">
+                        <span class="check__txt">don't have an account?</span>
+                        <a href="#" class="text-decoration-none check__txt--bg">register</a>
                     </div>
-                    <div class="input_or p-5">
-                        <div class="text-center container__login_or_position">
-                            <span class="px-3 container__login_or">
+                    <div class="login__or p-5">
+                        <div class="text-center or__position">
+                            <span class="px-3 or__bg">
                                 or
                             </span>
                         </div>
                     </div>
-                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des-419&ec=GAlA8wE&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-603588113%3A1692594436524672" class="btn d-flex gap-2 justify-content-center mb-5 py-3 container__login_nput_button_google" target="_blank">
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des-419&ec=GAlA8wE&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-603588113%3A1692594436524672" class="btn d-flex gap-2 justify-content-center mb-5 py-3 login__button--google" target="_blank">
                         <img src="../icon/social-google-plus-svgrepo-com.svg" alt="google-icon" width="30px" class="d-none d-sm-block">
                         <span class="login_input_check pt-1">continue with google</span>
                     </a>

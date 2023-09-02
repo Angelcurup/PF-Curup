@@ -1,0 +1,11 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+#stars {
+    .stars-body {
+        .stars-body-title {
+            font-family: v.$fount-title-2;
+            font-size: 80px;
+        }
+    }
+}

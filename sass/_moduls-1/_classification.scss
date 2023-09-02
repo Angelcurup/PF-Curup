@@ -6,7 +6,7 @@
     height: auto;
     padding: 20px 10%;
 
-    .classification_title {
+    .classification__title {
         font-size: map-get(v.$font-size, "sub-title-md");
         color: map-get(v.$colors, "black");
         text-transform: v.$text-transform;
@@ -22,7 +22,7 @@
         @include m.grid(repeat(auto-fit, minmax(min(100%, 200px), 1fr)), 20px, 150px);
         margin-top: 20px;
 
-        .classification__class_button {
+        .class__button {
             @include m.style-btn (map-get(v.$colors, "black"), map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$border-radius-sm, none, 0);
             @include m.flex ( flex, column, nowrap, center, center);
             text-decoration: none;
@@ -30,6 +30,10 @@
             transition: v.$ease-out;
             &:hover {
                 background-color: map-get(v.$colors, "grey");
+            }
+
+            .class__button--img {
+                width: 50px;
             }
         }
     }

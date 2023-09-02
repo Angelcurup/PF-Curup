@@ -1,0 +1,184 @@
+@use '../variables' as v;
+@use '../mixin' as m;
+
+
+#starts {
+    background-image: linear-gradient(to left top, #100622, #20152e, #1b1323, #19161d, #171618);
+    height: 100vh;
+    .starts-body {
+        @include m.flex(flex, column, nowrap, center, center);
+        text-align: center;
+        background: url(../../img/stars.svg) no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+        .starts-body-title {
+            font-family: v.$fount-title-2;
+            font-weight: map-get(v.$font-weight, "bold" );
+            font-size: 15rem;
+            color: map-get(v.$colors, "white" );
+            position: relative;
+            width: 100%;
+            z-index: 99;
+            @include m.mv(584px) {
+                font-size: 10rem;
+            }
+            @include m.mv(400px) {
+                font-size: 8rem;
+                }
+        }
+        .starts-body-sub {
+            font-family: v.$fount-title-2;
+            font-weight: map-get(v.$font-weight, "bold" );
+            font-size: 3rem;
+            color: map-get(v.$colors, "white" );
+            position: relative;
+            width: 100%;
+            z-index: 99;
+            @include m.mv(584px) {
+                font-size: 2rem;
+            }
+        }
+        .starts-body-btn {
+            font-family: v.$fount-title-2;
+            @include m.style-btn( map-get(v.$colors, "black"), map-get(v.$colors, "white"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "semibol"), v.$border-radius-sm, none, v.$button-md );
+            margin-top: 40px;
+            text-decoration: none;
+            transition: v.$ease-out;
+            z-index: 99;
+            &:hover {
+                background-color: map-get(v.$colors, "violet" );
+                color: map-get(v.$colors, "white" );
+            }
+            @include m.mv(584px) {
+                font-size: map-get(v.$font-size, "span-md" );
+            }
+            @include m.mv(400px) {
+                font-size: map-get(v.$font-size, "span-sm" );
+                }
+        }
+    }
+    .starts-objets {
+        z-index: 99;
+        pointer-events: none;
+        .mando-ps5 {
+            width: 200px;
+            position: absolute;
+            top: 70%;
+            left: 40%;
+            z-index: 98;
+            transform: translateX(-50px);
+            animation: mandoLaunch var(--time) linear infinite both running;
+            @include m.mv(991px) {
+                width: 100px;
+                left: 60%;
+            }
+            @include m.mv(400px) {
+                width: 80px;
+                left: 80%;
+            }
+        }
+
+        .earth {
+            .earth-bg {
+                width: 200px;
+                position: absolute;
+                top: 20%;
+                left: 15%;
+                z-index: 95;
+                animation: earthEspin var(--time) linear infinite both running;
+                @include m.mv(991px){
+                    width: 150px;
+                    top: 10%;
+                    left: 10%;
+                }
+                @include m.mv(400px) {
+                width: 100px;
+                left: 5%;
+                }
+            }
+            .moon-bg {
+                width: 100px;
+                position: absolute;
+                top: 15%;
+                left: 25%;
+                z-index: 100;
+                animation: moonEspin calc(var(--time) / 2) linear infinite both running;
+                @include m.mv(991px) {
+                    width: 80px;
+                    top: 5%;
+                    left: 30%;
+                }
+                @include m.mv(400px) {
+                width: 40px;
+                left: 20%;
+                }
+            }
+        }
+
+        .robot {
+            position: absolute;
+            top: 40%;
+            right: 5%;
+            z-index: 100;
+            will-change: transfor;
+            animation: robotMove calc(var(--time) / 4 ) linear infinite both alternate;
+            @include m.mv(991px){
+                    top: 50%;
+                    right: 10%;
+                }
+            .robot-bg {
+                width: 500px;
+                animation: robotRotate var(--time) linear infinite both alternate;
+                @include m.mv(991px){
+                    width: 300px;
+                }
+                @include m.mv(400px) {
+                width: 200px;
+                }
+            }
+        }
+    }
+
+    .glowin-stars {
+        .star {
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: map-get(v.$colors, "white" );
+            opacity: 0.2;
+            will-change: opacity;
+            &:nth-child(1){
+                top: 20%;
+                left: 40%;
+                animation: glowinStars 1s ease-in-out infinite 0.5s;
+            }
+            &:nth-child(2){
+                top: 25%;
+                left: 57%;
+                animation: glowinStars 2s ease-in-out infinite 2s;
+            }
+            &:nth-child(3){
+                top: 40%;
+                left: 25%;
+                animation: glowinStars 5s ease-in-out infinite 5s;
+            }
+            &:nth-child(4){
+                top: 75%;
+                left: 80%;
+                animation: glowinStars 8s ease-in-out infinite 7s;
+            }
+            &:nth-child(5){
+                top: 90%;
+                left: 60%;
+                animation: glowinStars 7s ease-in-out infinite 9s;
+            }
+            &:nth-child(6){
+                top: 10%;
+                left: 60%;
+                animation: glowinStars 1s ease-in-out infinite 12s;
+            }
+            
+        }
+    }
+}

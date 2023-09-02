@@ -7,28 +7,28 @@
     height: auto;
     padding: 20px 10%;
 
-    .footer__grup1 {
+    .footer__container {
         @include m.grid(repeat(auto-fit, minmax(min(100%, 300px), 1fr)), 20px, auto);
         text-align: center;
         
-        .footer__grup1_box {
+        .container__content {
             margin-top: 20px;
             
-            .footer__grup1_box_title {
+            .content__title {
                 @include m.style-title (map-get(v.$colors, "white"), map-get(v.$font-size, "sub-title-md"), map-get( v.$font-weight, "bold"), v.$text-transform);
                 @include m.mv(623px){
                     font-size: map-get(v.$font-size, "sub-title-sm");
                 };
             }
 
-            .footer__grup1_box_txt {
+            .content__txt {
                 @include m.style-txt (map-get(v.$colors, "white"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "normal"));
                 margin-top: 20px;
             }
 
-            .footer__grup1_box_social {
+            .content__social {
 
-                .footer__grup1_box_icon {
+                .social__icon {
                     @include m.flex ( inline-flex, row, nowrap, center, center);
                     text-decoration: none;
                     width: 45px;
@@ -47,7 +47,7 @@
         }
     }
 
-    .footer__grup2 {
+    .footer__container--2 {
         height: auto;
         width: 100%;
         padding: 20px 10%;
@@ -66,7 +66,7 @@
 
     #footer {
         
-        .footer__grup1_box_social1 {
+        .container__content--social {
             grid-column: span 2;
         }
     }
@@ -76,7 +76,7 @@
 
     #footer {
         
-        .footer__grup1_box_social1 {
+        .container__content--social {
             grid-column: span 1;
         }
     }

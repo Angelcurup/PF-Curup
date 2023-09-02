@@ -43,32 +43,31 @@
 #page-product {
     background-color: map-get( v.$colors, "sky" );
 }
-.contain_products{
+.container__products{
     padding: 0 10%;
-    .products {
+    .products__content {
         background-color: map-get(v.$colors, "sky" );
-        .products_conten {
-            .products_conten_img {
-                
-                .products_conten_img_bg{
+        .content__row {
+            .content__picture {
+                .content__picture--img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                     @include m.mv(991px){
                         height: 400px;
-                        padding: 20px;
+                        padding: 10px;
                     };
                 }
             }
-            .products_conten_info {
+            .content__col {
                 padding: 40px;
-                @include m.mv(623px){
+                @include m.mv(623px) {
                     padding: 20px;
                     text-align: center
                 };
                 
-                .products_conten_info_detail {
-                    .products_conten_info_detail_title {
+                .content__details {
+                    .details__title {
                         @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "sub-title-lg"), map-get( v.$font-weight, "bold"), v.$text-transform);
                         -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                         animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -79,8 +78,8 @@
                             font-size: map-get( v.$font-size, "sub-title-sm" );
                         };
                     }
-                    .products_conten_info_detail_colors {
-                        .products_conten_info_detail_colors_title {
+                    .details__colors {
+                        .colors__title {
                             @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-md"), map-get( v.$font-weight, "semibold"), v.$text-transform);
                             @include m.mv(424px){
                                 font-size: map-get( v.$font-size, "txt-sm" );
@@ -92,34 +91,38 @@
                             display: flex;
                             flex-wrap: wrap;
                             align-items: center;
-                            @include m.mv(623px){
+                            @include m.mv(623px) {
                                 justify-content: center;
                             };
-                            .bg_color{
+                            .colors__bg {
                                 width: 45px;
                                 height: 45px;
                                 margin: 0 10px;
                                 cursor: pointer;
                             }
-                            .color1{
+                            .color1 {
                                 background-color: #fff;
+                                border: 1px solid #636363;
                             }
-                            .color2{
+                            .color2 {
                                 background-color: #181616;
+                                border: 1px solid #636363;
                             }
-                            .color3{
+                            .color3 {
                                 background-color: #7aabf5;
+                                border: 1px solid #636363;
                             }
-                            .color4{
+                            .color4 {
                                 background-color: #bbaef3;
+                                border: 1px solid #636363;
                             }
                         }
                     }
 
                 }
-                .products_conten_info_price {
+                .content__price {
                     
-                    .products_conten_info_price_txt {
+                    .price__txt {
                         @include m.style-txt(map-get(v.$colors, "black"), map-get(v.$font-size, "txt-md"), map-get(v.$font-weight, "semibold"));
                         @include m.mv(424px){
                             font-size: map-get( v.$font-size, "txt-sm" );
@@ -127,7 +130,7 @@
                     }
                 }
 
-                .products_conten_info_button {
+                .price__cart {
                     margin: 20px 0;
                     height: 5rem;
                     @include m.mv(623px){
@@ -135,30 +138,33 @@
                         justify-content: center;
                         align-items: center
                     };
-                    .products_conten_info_button_btn {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 20px;
-                        @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
-                        text-transform: uppercase;
-                        transition: v.$ease-out;
-                        &:hover {
-                            background-color: map-get(v.$colors, "purple" );
+
+                    .cart__button {
+                        .cart__button--bg {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                            @include m.style-btn(map-get(v.$colors, "white"), map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get(v.$font-weight, "semibold"), v.$border-radius-sm, none, v.$button-md);
+                            text-transform: uppercase;
+                            transition: v.$ease-out;
+                            &:hover {
+                                background-color: map-get(v.$colors, "purple" );
+                            }
+                            
+                            @include m.mv(424px) {
+                                font-size: map-get( v.$font-size, "txt-sm" );
+                            };
                         }
-                        
-                        @include m.mv(424px){
-                            font-size: map-get( v.$font-size, "txt-sm" );
-                        };
                     }
                 }
 
-                .products_description{
-                    .products_description_item {
+                .content__description {
+                    .description__item {
                         border: none;
                         background-color: map-get(v.$colors, "sky" );
-                        .products_description_item_btn {
-                            .products_description_item_btn_title{
+                        .item__button {
+                            .item__button--title {
                                 background-color: map-get(v.$colors, "sky" );
                                 @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$text-transform);
                             }
@@ -166,23 +172,24 @@
                     }
                 }
 
-                .products_description_follow {
+                .description__follow {
                     margin-top: 20px;
                     @include m.flex(flex, row, no-wrap, space-between, center);
                     @include m.mv(400px){
                         flex-direction: column;
                     };
-                    .products_description_follow_title {
+                    .follow__title {
                         padding: 20px;
                         @include m.style-title (map-get(v.$colors, "black"), map-get(v.$font-size, "txt-sm"), map-get( v.$font-weight, "semibold"), v.$text-transform);
                     }
-                    .products_description_follow_social {
+                    .follow__social {
                         padding: 20px;
-                        .social_icon{
+                        .social__icon{
                             text-decoration: none;
                             color: map-get(v.$colors, "black" );
                             font-size: map-get(v.$font-size, "txt-sm" );
                             margin: 0 8px;
+                            line-height: 8px;
                         }
                     }
                 }
