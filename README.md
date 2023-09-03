@@ -29,7 +29,8 @@ Cuando solo necesite incluir CSS o JS compilado de Bootstrap, puede usar jsDeliv
 
 ###### Icon [Font Awesome](http://https://fontawesome.com/ "Font Awesome")
 
-##Css Grid Responsive
+
+## Css Grid Responsive
 Para evitar el uso eccesivo de media queries y tener un codigo mas limpio y legible, usonado solo 3 lineas de codigo
 
 ###### Responsive con media queries:
